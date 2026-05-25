@@ -1,65 +1,113 @@
-import Image from "next/image";
+const pisos = [
+  {
+    id: 1,
+    titulo: "Piso en Calle Alberche",
+    precio: "139.900€",
+    imagen:
+      "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200",
+  },
+  {
+    id: 2,
+    titulo: "Chalet zona Hospital - Nuevo Centro",
+    precio: "699.900€",
+    imagen:
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200",
+  },
+  {
+    id: 3,
+    titulo: "Piso en Paseo de la Estación",
+    precio: "113.000€",
+    imagen:
+      "https://images.unsplash.com/photo-1502672023488-70e25813eb80?q=80&w=1200",
+  },
+  {
+    id: 4,
+    titulo: "Ático en Avenida Príncipe Felipe",
+    precio: "219.900€",
+    imagen:
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200",
+  },
+  {
+    id: 5,
+    titulo: "Piso en Calle Segurilla",
+    precio: "114.900€",
+    imagen:
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200",
+  },
+  {
+    id: 6,
+    titulo: "Piso en Avenida Pío XII",
+    precio: "74.900€",
+    imagen:
+      "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main className="bg-gray-100 min-h-screen">
+
+      {/* HERO */}
+      <section className="relative">
+        <img
+          src="/prado.jpg"
+          alt="Basílica del Prado"
+          style={{
+            width: "100%",
+            height: "700px",
+            objectFit: "cover",
+            display: "block",
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <div className="text-center px-4">
+            <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">
+              Inmobiliaria Talavera
+            </h1>
+
+            <p className="text-white text-2xl md:text-3xl">
+              Viviendas en Talavera de la Reina y comarca
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* PISOS */}
+      <section className="max-w-7xl mx-auto px-8 py-20">
+        <h2 className="text-4xl font-bold text-center mb-12">
+          Viviendas destacadas
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+
+          {pisos.map((piso) => (
+            <a
+              key={piso.id}
+              href={`/pisos/${piso.id}`}
+              className="bg-white rounded-3xl overflow-hidden shadow-xl hover:scale-105 transition duration-300"
+            >
+              <img
+                src={piso.imagen}
+                alt={piso.titulo}
+                className="w-full h-64 object-cover"
+              />
+
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">
+                  {piso.titulo}
+                </h3>
+
+                <p className="text-blue-600 text-2xl font-semibold">
+                  {piso.precio}
+                </p>
+              </div>
+            </a>
+          ))}
+
         </div>
-      </main>
-    </div>
+      </section>
+
+    </main>
   );
 }
