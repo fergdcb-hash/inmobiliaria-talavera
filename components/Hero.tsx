@@ -14,7 +14,7 @@ export default function Hero() {
         className="sticky top-0 z-50 backdrop-blur-xl bg-white/70 border-b border-white/20"
       >
 
-        <div className="max-w-[1500px] mx-auto px-8 py-6 flex items-center justify-between">
+        <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-5 md:py-6 flex items-center justify-between">
 
           {/* LOGO */}
           <div className="flex items-center gap-3">
@@ -23,7 +23,7 @@ export default function Hero() {
               🏡
             </div>
 
-            <h1 className="text-3xl font-bold text-gray-900">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
               CasaYa
             </h1>
 
@@ -62,7 +62,7 @@ export default function Hero() {
           {/* BOTON */}
           <a
             href="#valoracion"
-            className="bg-green-600 hover:bg-green-700 hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
+            className="bg-green-600 hover:bg-green-700 hover:scale-105 transition text-white px-4 md:px-6 py-3 md:py-4 rounded-2xl font-semibold shadow-lg text-sm md:text-base"
           >
 
             Valora tu vivienda
@@ -74,7 +74,7 @@ export default function Hero() {
       </motion.header>
 
       {/* HERO */}
-      <div className="max-w-[1500px] mx-auto px-8 pt-20 pb-24 grid lg:grid-cols-2 gap-20 items-center">
+      <div className="max-w-[1500px] mx-auto px-6 md:px-8 pt-10 md:pt-20 pb-20 md:pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
 
         {/* TEXTO */}
         <motion.div
@@ -84,17 +84,17 @@ export default function Hero() {
           className="max-w-2xl"
         >
 
-          <div className="inline-flex items-center gap-3 bg-white rounded-full px-5 py-3 shadow-premium mb-8">
+          <div className="inline-flex items-center gap-3 bg-white rounded-full px-4 md:px-5 py-2 md:py-3 shadow-premium mb-6 md:mb-8">
 
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
 
-            <p className="text-gray-700 font-medium">
+            <p className="text-gray-700 font-medium text-sm md:text-base">
               Inmobiliaria premium en Talavera
             </p>
 
           </div>
 
-          <h1 className="text-[5.5rem] leading-[0.95] font-bold text-gray-900 mb-8">
+          <h1 className="text-[3.5rem] md:text-[5.5rem] leading-[0.95] font-bold text-gray-900 mb-6 md:mb-8">
 
             Encuentra
             <br />
@@ -107,18 +107,18 @@ export default function Hero() {
 
           </h1>
 
-          <p className="text-2xl text-gray-600 leading-relaxed mb-14 max-w-xl">
+          <p className="text-lg md:text-2xl text-gray-600 leading-relaxed mb-10 md:mb-14 max-w-xl">
 
             Te ayudamos a comprar, vender o alquilar la vivienda perfecta.
 
           </p>
 
           {/* BOTONES */}
-          <div className="flex gap-5 mb-20">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-5 mb-12 md:mb-20">
 
             <a
               href="#propiedades"
-              className="bg-green-600 hover:bg-green-700 hover:scale-105 transition duration-300 text-white px-8 py-5 rounded-2xl text-lg font-semibold shadow-lg"
+              className="bg-green-600 hover:bg-green-700 hover:scale-105 transition duration-300 text-white px-6 md:px-8 py-4 md:py-5 rounded-2xl text-base md:text-lg font-semibold shadow-lg text-center"
             >
 
               Ver propiedades
@@ -127,7 +127,7 @@ export default function Hero() {
 
             <a
               href="#valoracion"
-              className="bg-white border border-gray-200 hover:border-gray-300 hover:scale-105 transition duration-300 text-gray-900 px-8 py-5 rounded-2xl text-lg font-semibold"
+              className="bg-white border border-gray-200 hover:border-gray-300 hover:scale-105 transition duration-300 text-gray-900 px-6 md:px-8 py-4 md:py-5 rounded-2xl text-base md:text-lg font-semibold text-center"
             >
 
               Contactar
@@ -146,12 +146,12 @@ export default function Hero() {
           className="relative"
         >
 
-          <div className="rounded-[45px] overflow-hidden shadow-2xl group">
+          <div className="rounded-[35px] md:rounded-[45px] overflow-hidden shadow-2xl group">
 
             <img
               src="/images/hero.avif"
               alt="Casa"
-              className="w-full h-[760px] object-cover group-hover:scale-105 transition duration-[2500ms]"
+              className="w-full h-[420px] md:h-[760px] object-cover group-hover:scale-105 transition duration-[2500ms]"
             />
 
           </div>
@@ -163,18 +163,18 @@ export default function Hero() {
               duration: 4,
               repeat: Infinity,
             }}
-            className="absolute bottom-8 left-8 bg-white rounded-[30px] p-6 shadow-2xl w-[320px]"
+            className="absolute bottom-4 md:bottom-8 left-4 md:left-8 bg-white rounded-[25px] md:rounded-[30px] p-4 md:p-6 shadow-2xl w-[240px] md:w-[320px]"
           >
 
-            <p className="text-gray-500 mb-3">
+            <p className="text-gray-500 mb-2 md:mb-3 text-sm md:text-base">
               Vivienda destacada
             </p>
 
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
               Chalet moderno en El Monte
             </h3>
 
-            <p className="text-green-600 text-3xl font-bold">
+            <p className="text-green-600 text-2xl md:text-3xl font-bold">
               699.900€
             </p>
 
