@@ -22,13 +22,13 @@ export default function Properties() {
   return (
     <section
       id="propiedades"
-      className="py-36 overflow-hidden"
+      className="py-24 md:py-36 overflow-hidden"
     >
 
-      <div className="max-w-[1600px] mx-auto px-8">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-8">
 
         {/* HEADER */}
-        <div className="flex items-end justify-between mb-20">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16 md:mb-20">
 
           <div>
 
@@ -36,7 +36,7 @@ export default function Properties() {
               PROPIEDADES
             </p>
 
-            <h2 className="text-[4.5rem] leading-[1] font-bold text-gray-900 max-w-4xl">
+            <h2 className="text-[3rem] md:text-[4.5rem] leading-[1] font-bold text-gray-900 max-w-4xl">
               Algunas viviendas destacadas
             </h2>
 
@@ -70,23 +70,25 @@ export default function Properties() {
         >
 
           {/* CARD 1 */}
-          <div className="group min-w-[31%] bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500">
+          <div className="group min-w-[90%] md:min-w-[31%] bg-white rounded-[35px] md:rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500">
 
+            {/* IMG */}
             <div className="overflow-hidden">
 
               <img
                 src="/images/house1.jpg"
                 alt="Casa"
-                className="w-full h-[340px] object-cover group-hover:scale-105 transition duration-[2000ms]"
+                className="w-full h-[280px] md:h-[340px] object-cover group-hover:scale-105 transition duration-[2000ms]"
               />
 
             </div>
 
-            <div className="p-8">
+            {/* CONTENT */}
+            <div className="p-6 md:p-8">
 
               <div className="flex items-center justify-between mb-4">
 
-                <p className="text-gray-500">
+                <p className="text-gray-500 text-sm md:text-base">
                   Talavera de la Reina
                 </p>
 
@@ -96,19 +98,24 @@ export default function Properties() {
 
               </div>
 
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                 Chalet moderno
               </h3>
 
               <div className="flex items-center justify-between">
 
-                <p className="text-4xl font-bold text-green-600">
+                <p className="text-3xl md:text-4xl font-bold text-green-600">
                   699.900€
                 </p>
 
-                <button className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl hover:scale-110 transition">
+                <a
+                  href="/propiedad"
+                  className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl hover:scale-110 transition flex items-center justify-center"
+                >
+
                   →
-                </button>
+
+                </a>
 
               </div>
 
@@ -117,23 +124,25 @@ export default function Properties() {
           </div>
 
           {/* CARD 2 */}
-          <div className="group min-w-[31%] bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500">
+          <div className="group min-w-[90%] md:min-w-[31%] bg-white rounded-[35px] md:rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500">
 
+            {/* IMG */}
             <div className="overflow-hidden">
 
               <img
                 src="/images/house2.jpg"
                 alt="Casa"
-                className="w-full h-[340px] object-cover group-hover:scale-105 transition duration-[2000ms]"
+                className="w-full h-[280px] md:h-[340px] object-cover group-hover:scale-105 transition duration-[2000ms]"
               />
 
             </div>
 
-            <div className="p-8">
+            {/* CONTENT */}
+            <div className="p-6 md:p-8">
 
               <div className="flex items-center justify-between mb-4">
 
-                <p className="text-gray-500">
+                <p className="text-gray-500 text-sm md:text-base">
                   Talavera Centro
                 </p>
 
@@ -143,19 +152,24 @@ export default function Properties() {
 
               </div>
 
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                 Ático reformado
               </h3>
 
               <div className="flex items-center justify-between">
 
-                <p className="text-4xl font-bold text-green-600">
+                <p className="text-3xl md:text-4xl font-bold text-green-600">
                   289.900€
                 </p>
 
-                <button className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl hover:scale-110 transition">
+                <a
+                  href="/propiedad"
+                  className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl hover:scale-110 transition flex items-center justify-center"
+                >
+
                   →
-                </button>
+
+                </a>
 
               </div>
 
@@ -164,23 +178,25 @@ export default function Properties() {
           </div>
 
           {/* CARD 3 */}
-          <div className="group min-w-[31%] bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500">
+          <div className="group min-w-[90%] md:min-w-[31%] bg-white rounded-[35px] md:rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500">
 
+            {/* IMG */}
             <div className="overflow-hidden">
 
               <img
                 src="/images/house3.jpg"
                 alt="Casa"
-                className="w-full h-[340px] object-cover group-hover:scale-105 transition duration-[2000ms]"
+                className="w-full h-[280px] md:h-[340px] object-cover group-hover:scale-105 transition duration-[2000ms]"
               />
 
             </div>
 
-            <div className="p-8">
+            {/* CONTENT */}
+            <div className="p-6 md:p-8">
 
               <div className="flex items-center justify-between mb-4">
 
-                <p className="text-gray-500">
+                <p className="text-gray-500 text-sm md:text-base">
                   Talavera Norte
                 </p>
 
@@ -190,19 +206,24 @@ export default function Properties() {
 
               </div>
 
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                 Piso minimalista
               </h3>
 
               <div className="flex items-center justify-between">
 
-                <p className="text-4xl font-bold text-green-600">
+                <p className="text-3xl md:text-4xl font-bold text-green-600">
                   184.900€
                 </p>
 
-                <button className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl hover:scale-110 transition">
+                <a
+                  href="/propiedad"
+                  className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl hover:scale-110 transition flex items-center justify-center"
+                >
+
                   →
-                </button>
+
+                </a>
 
               </div>
 
@@ -210,24 +231,26 @@ export default function Properties() {
 
           </div>
 
-          {/* EXTRA */}
-          <div className="group min-w-[31%] bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500">
+          {/* CARD 4 */}
+          <div className="group min-w-[90%] md:min-w-[31%] bg-white rounded-[35px] md:rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500">
 
+            {/* IMG */}
             <div className="overflow-hidden">
 
               <img
                 src="/images/house1.jpg"
                 alt="Casa"
-                className="w-full h-[340px] object-cover group-hover:scale-105 transition duration-[2000ms]"
+                className="w-full h-[280px] md:h-[340px] object-cover group-hover:scale-105 transition duration-[2000ms]"
               />
 
             </div>
 
-            <div className="p-8">
+            {/* CONTENT */}
+            <div className="p-6 md:p-8">
 
               <div className="flex items-center justify-between mb-4">
 
-                <p className="text-gray-500">
+                <p className="text-gray-500 text-sm md:text-base">
                   Talavera Sur
                 </p>
 
@@ -237,19 +260,24 @@ export default function Properties() {
 
               </div>
 
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                 Piso luminoso
               </h3>
 
               <div className="flex items-center justify-between">
 
-                <p className="text-4xl font-bold text-green-600">
+                <p className="text-3xl md:text-4xl font-bold text-green-600">
                   159.900€
                 </p>
 
-                <button className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl hover:scale-110 transition">
+                <a
+                  href="/propiedad"
+                  className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl hover:scale-110 transition flex items-center justify-center"
+                >
+
                   →
-                </button>
+
+                </a>
 
               </div>
 

@@ -1,20 +1,24 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 export default function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <section className="bg-[#f6f6f3] min-h-screen overflow-hidden">
+    <section className="bg-transparent min-h-screen overflow-hidden">
 
       {/* NAVBAR */}
       <motion.header
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="sticky top-0 z-50 backdrop-blur-xl bg-white/70 border-b border-white/20"
+        className="sticky top-0 z-50 backdrop-blur-2xl bg-white/60 border-b border-white/20"
       >
 
-        <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-5 md:py-6 flex items-center justify-between">
+        <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-5 flex items-center justify-between">
 
           {/* LOGO */}
           <div className="flex items-center gap-3">
@@ -29,7 +33,7 @@ export default function Hero() {
 
           </div>
 
-          {/* LINKS */}
+          {/* DESKTOP */}
           <nav className="hidden lg:flex items-center gap-10 text-gray-600 text-lg">
 
             <a href="#" className="hover:text-black transition">
@@ -59,19 +63,126 @@ export default function Hero() {
 
           </nav>
 
-          {/* BOTON */}
+          {/* BOTON DESKTOP */}
           <a
             href="#valoracion"
-            className="bg-green-600 hover:bg-green-700 hover:scale-105 transition text-white px-4 md:px-6 py-3 md:py-4 rounded-2xl font-semibold shadow-lg text-sm md:text-base"
+            className="hidden lg:flex bg-green-600 hover:bg-green-700 hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
           >
 
             Valora tu vivienda
 
           </a>
 
+          {/* MENU MOBILE */}
+          <button
+            onClick={() => setMenuOpen(true)}
+            className="lg:hidden w-12 h-12 rounded-2xl bg-white shadow-premium flex items-center justify-center"
+          >
+
+            <Menu />
+
+          </button>
+
         </div>
 
       </motion.header>
+
+      {/* MOBILE MENU */}
+      <AnimatePresence>
+
+        {menuOpen && (
+
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ duration: 0.4 }}
+            className="fixed inset-0 z-[100] bg-[#f6f6f3]/95 backdrop-blur-2xl flex flex-col"
+          >
+
+            {/* TOP */}
+            <div className="flex items-center justify-between px-6 py-6 border-b border-black/5">
+
+              <div className="flex items-center gap-3">
+
+                <div className="w-10 h-10 rounded-2xl bg-green-600 flex items-center justify-center text-white">
+                  🏡
+                </div>
+
+                <h2 className="text-2xl font-bold">
+                  CasaYa
+                </h2>
+
+              </div>
+
+              <button
+                onClick={() => setMenuOpen(false)}
+                className="w-12 h-12 rounded-2xl bg-white shadow-premium flex items-center justify-center"
+              >
+
+                <X />
+
+              </button>
+
+            </div>
+
+            {/* LINKS */}
+            <div className="flex flex-col px-8 pt-14 gap-8 text-4xl font-bold text-gray-900">
+
+              <a
+                href="#"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-green-600 transition"
+              >
+                Inicio
+              </a>
+
+              <a
+                href="#propiedades"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-green-600 transition"
+              >
+                Propiedades
+              </a>
+
+              <a
+                href="#servicios"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-green-600 transition"
+              >
+                Servicios
+              </a>
+
+              <a
+                href="#valoracion"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-green-600 transition"
+              >
+                Valoración
+              </a>
+
+            </div>
+
+            {/* BOTON */}
+            <div className="mt-auto p-6">
+
+              <a
+                href="#valoracion"
+                onClick={() => setMenuOpen(false)}
+                className="bg-green-600 hover:bg-green-700 transition text-white w-full py-5 rounded-2xl text-xl font-semibold flex items-center justify-center shadow-lg"
+              >
+
+                Valora tu vivienda
+
+              </a>
+
+            </div>
+
+          </motion.div>
+
+        )}
+
+      </AnimatePresence>
 
       {/* HERO */}
       <div className="max-w-[1500px] mx-auto px-6 md:px-8 pt-10 md:pt-20 pb-20 md:pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
@@ -114,7 +225,7 @@ export default function Hero() {
           </p>
 
           {/* BOTONES */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-5 mb-12 md:mb-20">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-5">
 
             <a
               href="#propiedades"
@@ -155,30 +266,6 @@ export default function Hero() {
             />
 
           </div>
-
-          {/* CARD */}
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-            }}
-            className="absolute bottom-4 md:bottom-8 left-4 md:left-8 bg-white rounded-[25px] md:rounded-[30px] p-4 md:p-6 shadow-2xl w-[240px] md:w-[320px]"
-          >
-
-            <p className="text-gray-500 mb-2 md:mb-3 text-sm md:text-base">
-              Vivienda destacada
-            </p>
-
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
-              Chalet moderno en El Monte
-            </h3>
-
-            <p className="text-green-600 text-2xl md:text-3xl font-bold">
-              699.900€
-            </p>
-
-          </motion.div>
 
         </motion.div>
 
