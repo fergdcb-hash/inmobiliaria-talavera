@@ -7,7 +7,6 @@ export default function Services() {
 
       <div className="max-w-[1600px] mx-auto px-6 md:px-8 relative z-10">
 
-        {/* HEADER */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16 md:mb-20">
 
           <div>
@@ -24,7 +23,6 @@ export default function Services() {
 
         </div>
 
-        {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* CARD 1 */}
@@ -40,16 +38,13 @@ export default function Services() {
 
             </div>
 
-            <div className="flex items-center justify-between mb-5">
-
-              <h3 className="text-2xl md:text-3xl font-bold text-green-700">
-                Venta y alquiler
-              </h3>
-
-            </div>
+            <h3 className="text-2xl md:text-3xl font-bold text-green-700 mb-5">
+              Venta Low-Cost Premium
+            </h3>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Encontramos el comprador o inquilino ideal para tu vivienda.
+              Fotografía profesional, posicionamiento en portales y gestión de visitas.
+              Todo incluido por una tarifa fija.
             </p>
 
           </div>
@@ -71,16 +66,13 @@ export default function Services() {
 
             </div>
 
-            <div className="flex items-center justify-between mb-5">
-
-              <h3 className="text-2xl md:text-3xl font-bold text-purple-700">
-                Gestión integral
-              </h3>
-
-            </div>
+            <h3 className="text-2xl md:text-3xl font-bold text-purple-700 mb-5">
+              Alquiler Seguro
+            </h3>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Nos encargamos de todo el proceso para que no tengas preocupaciones.
+              Filtramos a los inquilinos mediante estudios de solvencia rigurosos
+              y gestionamos todo el proceso de alquiler.
             </p>
 
           </div>
@@ -98,16 +90,13 @@ export default function Services() {
 
             </div>
 
-            <div className="flex items-center justify-between mb-5">
-
-              <h3 className="text-2xl md:text-3xl font-bold text-blue-700">
-                Compra e inversión
-              </h3>
-
-            </div>
+            <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-5">
+              Gestión turística
+            </h3>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Te ayudamos a invertir en propiedades con seguridad y rentabilidad.
+              Maximizamos los ingresos de tu vivienda vacacional.
+              Gestionamos limpieza, entrega de llaves y optimización de precios.
             </p>
 
           </div>
