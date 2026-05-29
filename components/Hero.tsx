@@ -47,7 +47,7 @@ export default function Hero() {
               Servicios
             </a>
 
-            <a href="#valoracion" className="hover:text-black transition">
+            <a href="#contacto" className="hover:text-black transition">
               Valoración
             </a>
 
