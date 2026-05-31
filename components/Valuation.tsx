@@ -1,7 +1,7 @@
 export default function Valuation() {
   return (
     <section
-      id="valoracion"
+      id="contacto"
       className="relative bg-[#eef5e8] py-40 overflow-hidden"
     >
       {/* EFECTOS DE FONDO */}
@@ -10,26 +10,39 @@ export default function Valuation() {
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-100 blur-[140px] rounded-full opacity-50"></div>
 
       <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center relative z-10">
+
         {/* IZQUIERDA */}
         <div>
+
           <p className="text-green-600 font-semibold text-lg mb-5 tracking-[0.2em]">
-            VALORACIÓN GRATUITA
+            CONTACTO Y VALORACIÓN GRATUITA
           </p>
 
           <h2 className="text-[4rem] md:text-[5rem] leading-[1] font-bold text-gray-900 mb-10">
-            ¿Quieres saber cuánto vale realmente tu vivienda?
+            Descubre el valor real de tu casa
           </h2>
 
           <p className="text-2xl text-gray-600 leading-relaxed mb-14 max-w-2xl">
             No regales el dinero de tu herencia o de tu esfuerzo.
-            Nuestros expertos analizarán tu vivienda y te ofrecerán una
-            valoración real de mercado para ayudarte a vender rápido y al mejor
-            precio posible.
+
+            <br />
+            <br />
+
+            Muchas inmobiliarias inflan el precio para captar clientes y después
+            obligan a bajar el precio tras meses perdiendo tiempo.
+
+            <br />
+            <br />
+
+            Nosotros te damos una valoración basada en datos reales de mercado
+            para ayudarte a vender rápido y al mejor precio posible.
           </p>
 
           {/* BENEFICIOS */}
           <div className="grid grid-cols-2 gap-6">
+
             <div className="bg-white rounded-[30px] p-6 shadow-premium">
+
               <p className="text-xl font-semibold text-gray-800">
                 ✅ Valoración gratuita
               </p>
@@ -37,9 +50,11 @@ export default function Valuation() {
               <p className="text-gray-500 mt-2">
                 Sin compromiso ni costes ocultos.
               </p>
+
             </div>
 
             <div className="bg-white rounded-[30px] p-6 shadow-premium">
+
               <p className="text-xl font-semibold text-gray-800">
                 ✅ Precio real de mercado
               </p>
@@ -47,9 +62,11 @@ export default function Valuation() {
               <p className="text-gray-500 mt-2">
                 Sin inflar cifras para captar clientes.
               </p>
+
             </div>
 
             <div className="bg-white rounded-[30px] p-6 shadow-premium">
+
               <p className="text-xl font-semibold text-gray-800">
                 ✅ Venta más rápida
               </p>
@@ -57,9 +74,11 @@ export default function Valuation() {
               <p className="text-gray-500 mt-2">
                 Estrategias para reducir tiempos de venta.
               </p>
+
             </div>
 
             <div className="bg-white rounded-[30px] p-6 shadow-premium">
+
               <p className="text-xl font-semibold text-gray-800">
                 ✅ Asesoramiento experto
               </p>
@@ -67,19 +86,24 @@ export default function Valuation() {
               <p className="text-gray-500 mt-2">
                 Te acompañamos durante todo el proceso.
               </p>
+
             </div>
+
           </div>
+
         </div>
 
         {/* DERECHA */}
         <div className="relative">
-          {/* FORMULARIO */}
+
           <div className="bg-white rounded-[45px] p-10 shadow-2xl relative z-10">
+
             <h3 className="text-4xl font-bold text-gray-900 mb-10">
-              Solicita tu valoración
+              Contacta con nosotros
             </h3>
 
             <div className="flex flex-col gap-6">
+
               <input
                 type="text"
                 placeholder="Nombre"
@@ -105,18 +129,23 @@ export default function Valuation() {
               />
 
               <textarea
-                placeholder="Cuéntanos sobre tu vivienda"
+                placeholder="Cuéntanos cómo podemos ayudarte"
                 className="p-5 rounded-2xl border border-gray-200 text-xl h-40 outline-none focus:border-green-500"
               />
 
               <button className="bg-green-600 hover:bg-green-700 text-white py-5 rounded-2xl text-2xl font-semibold shadow-xl transition">
-                Solicitar valoración gratuita
+
+                Solicitar información
+
               </button>
+
             </div>
+
           </div>
 
           {/* TARJETA FLOTANTE */}
           <div className="absolute -bottom-10 -right-10 bg-white rounded-[35px] p-6 shadow-2xl w-[280px]">
+
             <p className="text-gray-500 mb-2">
               Tiempo medio de venta
             </p>
@@ -128,9 +157,13 @@ export default function Valuation() {
             <p className="text-gray-500 mt-2">
               Mucho más rápido que la media del mercado.
             </p>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }

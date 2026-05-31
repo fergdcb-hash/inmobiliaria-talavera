@@ -10,7 +10,6 @@ export default function Hero() {
   return (
     <section className="bg-transparent min-h-screen overflow-hidden">
 
-      {/* NAVBAR */}
       <motion.header
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -19,7 +18,6 @@ export default function Hero() {
       >
         <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-5 flex items-center justify-between">
 
-          {/* LOGO */}
           <div className="flex items-center gap-3">
 
             <div className="w-10 h-10 rounded-2xl bg-green-600 flex items-center justify-center text-white text-lg">
@@ -32,7 +30,6 @@ export default function Hero() {
 
           </div>
 
-          {/* MENU DESKTOP */}
           <nav className="hidden lg:flex items-center gap-10 text-gray-600 text-lg">
 
             <a href="#" className="hover:text-black transition">
@@ -48,20 +45,18 @@ export default function Hero() {
             </a>
 
             <a href="#contacto" className="hover:text-black transition">
-              Valoración
+              Contacto
             </a>
 
           </nav>
 
-          {/* BOTÓN DESKTOP */}
           <a
-            href="#valoracion"
+            href="#contacto"
             className="hidden lg:flex bg-green-600 hover:bg-green-700 hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
           >
-            Valora tu vivienda
+            Contacto
           </a>
 
-          {/* BOTÓN MOBILE */}
           <button
             onClick={() => setMenuOpen(true)}
             className="lg:hidden w-12 h-12 rounded-2xl bg-white shadow-premium flex items-center justify-center"
@@ -72,7 +67,6 @@ export default function Hero() {
         </div>
       </motion.header>
 
-      {/* MENU MOVIL */}
       <AnimatePresence>
 
         {menuOpen && (
@@ -110,36 +104,20 @@ export default function Hero() {
 
             <div className="flex flex-col px-8 pt-14 gap-8 text-4xl font-bold text-gray-900">
 
-              <a
-                href="#"
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-green-600 transition"
-              >
+              <a href="#" onClick={() => setMenuOpen(false)}>
                 Inicio
               </a>
 
-              <a
-                href="#propiedades"
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-green-600 transition"
-              >
+              <a href="#propiedades" onClick={() => setMenuOpen(false)}>
                 Propiedades
               </a>
 
-              <a
-                href="#servicios"
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-green-600 transition"
-              >
+              <a href="#servicios" onClick={() => setMenuOpen(false)}>
                 Servicios
               </a>
 
-              <a
-                href="#valoracion"
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-green-600 transition"
-              >
-                Valoración
+              <a href="#contacto" onClick={() => setMenuOpen(false)}>
+                Contacto
               </a>
 
             </div>
@@ -147,11 +125,11 @@ export default function Hero() {
             <div className="mt-auto p-6">
 
               <a
-                href="#valoracion"
+                href="#contacto"
                 onClick={() => setMenuOpen(false)}
                 className="bg-green-600 hover:bg-green-700 transition text-white w-full py-5 rounded-2xl text-xl font-semibold flex items-center justify-center shadow-lg"
               >
-                Valora tu vivienda
+                Contacto
               </a>
 
             </div>
@@ -162,10 +140,8 @@ export default function Hero() {
 
       </AnimatePresence>
 
-      {/* HERO */}
       <div className="max-w-[1500px] mx-auto px-6 md:px-8 pt-10 md:pt-20 pb-20 md:pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
 
-        {/* TEXTO */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -178,7 +154,7 @@ export default function Hero() {
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
 
             <p className="text-gray-700 font-medium text-sm md:text-base">
-              Inmobiliaria transparente en Talavera
+              La inmobiliaria que mira por tu bolsillo
             </p>
 
           </div>
@@ -198,39 +174,24 @@ export default function Hero() {
 
           </h1>
 
-          <p className="text-lg md:text-2xl text-gray-600 leading-relaxed mb-10 md:mb-14 max-w-2xl">
+          <p className="text-lg md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
 
             Las inmobiliarias tradicionales cobran miles de euros en comisiones por un trabajo que debería ser transparente.
 
             <br />
             <br />
 
-            En CasaYa obtienes fotografía profesional, máxima difusión en portales, gestión integral y asesoramiento experto por una tarifa fija y clara.
+            En CasaYa obtienes fotografía profesional, máxima difusión en portales, gestión integral y asesoramiento experto por una tarifa fija transparente.
+
+            <br />
+            <br />
+
+            ¿Por qué pagar miles de euros en comisiones si el resultado puede ser el mismo?
 
           </p>
 
-          {/* BOTONES */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-5">
-
-            <a
-              href="#propiedades"
-              className="bg-green-600 hover:bg-green-700 hover:scale-105 transition duration-300 text-white px-6 md:px-8 py-4 md:py-5 rounded-2xl text-base md:text-lg font-semibold shadow-lg text-center"
-            >
-              Ver viviendas
-            </a>
-
-            <a
-              href="#valoracion"
-              className="bg-white border border-gray-200 hover:border-gray-300 hover:scale-105 transition duration-300 text-gray-900 px-6 md:px-8 py-4 md:py-5 rounded-2xl text-base md:text-lg font-semibold text-center"
-            >
-              Solicitar valoración
-            </a>
-
-          </div>
-
         </motion.div>
 
-        {/* IMAGEN */}
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -238,28 +199,32 @@ export default function Hero() {
           className="relative"
         >
 
-          <div className="rounded-[35px] md:rounded-[45px] overflow-hidden shadow-2xl group">
+          <div className="rounded-[35px] md:rounded-[45px] overflow-hidden relative group flex items-center justify-center min-h-[420px] md:min-h-[760px]">
+
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-[500px] h-[500px] rounded-full bg-green-100 blur-3xl opacity-70"></div>
+            </div>
 
             <img
-              src="/images/hero.avif"
-              alt="Casa"
-              className="w-full h-[420px] md:h-[760px] object-cover group-hover:scale-105 transition duration-[2500ms]"
-            />
+              src="/images/mascot.jpg"
+              alt="CasaYa Mascota"
+              className="relative z-10 w-full h-[420px] md:h-[760px] object-contain group-hover:scale-105 transition duration-[2500ms]"
+  />
 
           </div>
 
           <div className="absolute bottom-6 left-6 bg-white rounded-[30px] p-5 shadow-2xl max-w-[280px]">
 
-            <p className="text-gray-500 text-sm mb-2">
-              Ahorro medio para nuestros clientes
-            </p>
+           <p className="text-gray-500 text-sm mb-2">
+            Nuestros clientes ahorran
+           </p>
 
             <h3 className="text-4xl font-bold text-green-600">
               +4.500€
             </h3>
 
             <p className="text-gray-600 mt-2">
-              Frente a las comisiones tradicionales.
+              Frente a las inmobiliarias tradicionales
             </p>
 
           </div>
