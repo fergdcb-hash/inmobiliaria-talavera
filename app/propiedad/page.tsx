@@ -87,12 +87,12 @@ export default function PropertyPage() {
 
         <div className="bg-white rounded-3xl p-6 shadow-premium">
           <p className="text-gray-500 mb-2">Habitaciones</p>
-          <p className="text-3xl font-bold">4</p>
+          <p className="text-3xl font-bold">2</p>
         </div>
 
         <div className="bg-white rounded-3xl p-6 shadow-premium">
           <p className="text-gray-500 mb-2">Baños</p>
-          <p className="text-3xl font-bold">3</p>
+          <p className="text-3xl font-bold">1</p>
         </div>
 
         <div className="bg-white rounded-3xl p-6 shadow-premium">
