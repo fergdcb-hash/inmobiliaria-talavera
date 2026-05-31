@@ -39,7 +39,7 @@ export default function PropertyPage() {
         </h1>
 
         <p className="text-2xl font-bold text-green-600">
-          699.900€
+          VENDIDA
         </p>
 
       </div>
@@ -114,10 +114,40 @@ export default function PropertyPage() {
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed">
-          Espectacular chalet moderno situado en una de las mejores zonas de
-          Talavera de la Reina. La vivienda dispone de amplios espacios,
-          acabados de alta calidad, cocina totalmente equipada, jardín privado,
-          piscina y zonas exteriores ideales para disfrutar en familia.
+          Te presentamos esta fantástica vivienda de aproximadamente 80 m²,
+          situada en una tranquila y cuidada urbanización privada de Arenas de
+          San Pedro, rodeada de naturaleza y con un entorno ideal para disfrutar
+          de la Sierra de Gredos.
+ 
+          <br />
+          <br />
+
+          La vivienda ha sido recientemente reformada y se encuentra lista para
+          entrar a vivir. Dispone de un amplio y luminoso salón, una cocina
+          espaciosa y funcional, un cuarto de baño completo y dos dormitorios,
+          uno con cama de matrimonio y otro con dos camas individuales.
+
+          <br />
+          <br />
+
+          Cuenta además con dos terrazas privadas. La principal recorre toda la
+          fachada de la vivienda, proporcionando un espacio perfecto para
+          relajarse al aire libre, mientras que la segunda terraza, más íntima,
+          tiene vistas al aparcamiento privado.
+
+          <br />
+          <br />
+
+          La urbanización dispone de piscina privada para residentes, amplias
+          zonas ajardinadas y está completamente rodeada de césped, árboles y
+          naturaleza, creando un ambiente tranquilo y agradable durante todo el
+          año.
+
+          <br />
+          <br />
+
+          Una excelente oportunidad para disfrutar de una vivienda reformada en
+          uno de los entornos más bonitos de Arenas de San Pedro.
         </p>
 
       </div>
