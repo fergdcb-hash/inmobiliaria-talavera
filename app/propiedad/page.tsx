@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function PropertyPage() {
   const images = [
-  "/images/property/1.png",
+  "/images/property/1.jpg",
   "/images/property/2.jpeg",
   "/images/property/3.jpeg",
   "/images/property/4.png",
@@ -35,7 +35,7 @@ export default function PropertyPage() {
         </p>
 
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-          Chalet moderno en Talavera
+            Vivienda reformada en Arenas de San Pedro
         </h1>
 
         <p className="text-2xl font-bold text-green-600">

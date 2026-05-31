@@ -34,7 +34,7 @@ export default function Services() {
             </div>
 
             <h3 className="text-2xl md:text-3xl font-bold text-green-700 mb-5">
-              Venta Low-Cost Premium
+              Venta Low-Cost Premium con Servicio Premium
             </h3>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">

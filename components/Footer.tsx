@@ -70,7 +70,7 @@ export default function Footer() {
               </p>
 
               <p>
-                +34 600 000 000
+                +34 622 034 868
               </p>
 
               <p>
