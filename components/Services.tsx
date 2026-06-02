@@ -14,7 +14,7 @@ export default function Services() {
             </p>
 
             <h2 className="text-[3rem] md:text-[4.5rem] leading-[1] font-bold text-gray-900 max-w-4xl">
-              Te ayudamos en todo el proceso
+              Nos encargamos de todo el proceso
             </h2>
           </div>
 
@@ -23,7 +23,7 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* CARD 1 */}
-          <div className="group bg-[#eef5e8] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium">
+          <div className="group bg-[#eef5e8] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium flex flex-col">
 
             <div className="bg-white rounded-[30px] h-[220px] md:h-[260px] overflow-hidden mb-8">
               <img
@@ -34,23 +34,27 @@ export default function Services() {
             </div>
 
             <h3 className="text-2xl md:text-3xl font-bold text-green-700 mb-5">
-              Venta Low-Cost Premium con Servicio Premium
+              Venta Low-Cost con Servicio Premium
             </h3>
 
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Fotografía profesional, posicionamiento en portales y gestión de visitas.
-              <br />
-              <br />
-              Todo incluido por una tarifa fija.
-              <br />
-              <br />
-              ¿Por qué pagar un 4% o 5% de comisión si el trabajo es el mismo?
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+              Valoración profesional del inmueble, reportaje fotográfico de alta calidad,
+              posicionamiento destacado en portales inmobiliarios, soporte telefónico,
+              gestión de visitas y asesoramiento continuo hasta la venta o alquiler.
+              Todo incluido por una tarifa fija (desde 2.499€ + IVA).
             </p>
+
+            <a
+              href="#contacto"
+              className="mt-auto inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+            >
+              Quiero vender
+            </a>
 
           </div>
 
           {/* CARD 2 */}
-          <div className="group bg-[#f3ecff] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium">
+          <div className="group bg-[#f3ecff] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium flex flex-col">
 
             <div className="bg-white rounded-[30px] h-[220px] md:h-[260px] overflow-hidden mb-8">
               <video
@@ -68,17 +72,25 @@ export default function Services() {
               Alquiler sin sorpresas
             </h3>
 
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Filtramos a los inquilinos con estudios de solvencia rigurosos.
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+              Buscamos y filtramos a los inquilinos mediante estudios de solvencia rigurosos.
               <br />
               <br />
-              Nos encargamos del contrato y de que cobres tu renta puntualmente cada mes.
+              Gestionamos las visitas, nos encargamos del contrato y velamos para que
+              cobres tu renta puntualmente cada mes.
             </p>
+
+            <a
+              href="#contacto"
+              className="mt-auto inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+            >
+              Quiero alquilar
+            </a>
 
           </div>
 
           {/* CARD 3 */}
-          <div className="group bg-[#edf4ff] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium">
+          <div className="group bg-[#edf4ff] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium flex flex-col">
 
             <div className="bg-white rounded-[30px] h-[220px] md:h-[260px] overflow-hidden mb-8">
               <img
@@ -92,15 +104,20 @@ export default function Services() {
               Gestión turística
             </h3>
 
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
               Maximiza tus ingresos con el turismo rural o vacacional.
-              <br />
-              <br />
-              Nos encargamos de la limpieza, entrega de llaves, lavandería y optimización del precio en Airbnb.
-              <br />
-              <br />
+              Te asesoramos para conseguir la licencia turística.
+              Nos encargamos de la limpieza, entrega de llaves, lavandería y
+              optimización del precio en plataformas como Airbnb y Booking.
               Tú solo recibes los ingresos.
             </p>
+
+            <a
+              href="#contacto"
+              className="mt-auto inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+            >
+              Quiero gestionar
+            </a>
 
           </div>
 

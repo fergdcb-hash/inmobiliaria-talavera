@@ -22,7 +22,7 @@ export default function Valuation() {
             Descubre el valor real de tu casa
           </h2>
 
-          <p className="text-2xl text-gray-600 leading-relaxed mb-14 max-w-2xl">
+          <p className="text-2xl text-gray-600 leading-relaxed max-w-2xl">
             No regales el dinero de tu herencia o de tu esfuerzo.
 
             <br />
@@ -38,65 +38,12 @@ export default function Valuation() {
             para ayudarte a vender rápido y al mejor precio posible.
           </p>
 
-          {/* BENEFICIOS */}
-          <div className="grid grid-cols-2 gap-6">
-
-            <div className="bg-white rounded-[30px] p-6 shadow-premium">
-
-              <p className="text-xl font-semibold text-gray-800">
-                ✅ Valoración gratuita
-              </p>
-
-              <p className="text-gray-500 mt-2">
-                Sin compromiso ni costes ocultos.
-              </p>
-
-            </div>
-
-            <div className="bg-white rounded-[30px] p-6 shadow-premium">
-
-              <p className="text-xl font-semibold text-gray-800">
-                ✅ Precio real de mercado
-              </p>
-
-              <p className="text-gray-500 mt-2">
-                Sin inflar cifras para captar clientes.
-              </p>
-
-            </div>
-
-            <div className="bg-white rounded-[30px] p-6 shadow-premium">
-
-              <p className="text-xl font-semibold text-gray-800">
-                ✅ Venta más rápida
-              </p>
-
-              <p className="text-gray-500 mt-2">
-                Estrategias para reducir tiempos de venta.
-              </p>
-
-            </div>
-
-            <div className="bg-white rounded-[30px] p-6 shadow-premium">
-
-              <p className="text-xl font-semibold text-gray-800">
-                ✅ Asesoramiento experto
-              </p>
-
-              <p className="text-gray-500 mt-2">
-                Te acompañamos durante todo el proceso.
-              </p>
-
-            </div>
-
-          </div>
-
         </div>
 
         {/* DERECHA */}
-        <div className="relative">
+        <div>
 
-          <div className="bg-white rounded-[45px] p-10 shadow-2xl relative z-10">
+          <div className="bg-white rounded-[45px] p-10 shadow-2xl">
 
             <h3 className="text-4xl font-bold text-gray-900 mb-10">
               Contacta con nosotros
@@ -124,39 +71,15 @@ export default function Valuation() {
 
               <input
                 type="text"
-                placeholder="Zona de la vivienda"
+                placeholder="Dirección de la vivienda"
                 className="p-5 rounded-2xl border border-gray-200 text-xl outline-none focus:border-green-500"
               />
 
-              <textarea
-                placeholder="Cuéntanos cómo podemos ayudarte"
-                className="p-5 rounded-2xl border border-gray-200 text-xl h-40 outline-none focus:border-green-500"
-              />
-
               <button className="bg-green-600 hover:bg-green-700 text-white py-5 rounded-2xl text-2xl font-semibold shadow-xl transition">
-
-                Solicitar información
-
+                Solicitar valoración gratuita
               </button>
 
             </div>
-
-          </div>
-
-          {/* TARJETA FLOTANTE */}
-          <div className="absolute -bottom-10 -right-10 bg-white rounded-[35px] p-6 shadow-2xl w-[280px]">
-
-            <p className="text-gray-500 mb-2">
-              Tiempo medio de venta
-            </p>
-
-            <h3 className="text-5xl font-bold text-green-600">
-              21 días
-            </h3>
-
-            <p className="text-gray-500 mt-2">
-              Mucho más rápido que la media del mercado.
-            </p>
 
           </div>
 

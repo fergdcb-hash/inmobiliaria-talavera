@@ -50,12 +50,12 @@ export default function Hero() {
 
           </nav>
 
-          <a
-            href="#contacto"
-            className="hidden lg:flex bg-green-600 hover:bg-green-700 hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
-          >
-            Contacto
-          </a>
+            <a
+              href="#contacto"
+              className="hidden lg:flex bg-green-600 hover:bg-green-700 hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
+            >
+              Valora Tu Casa
+            </a>
 
           <button
             onClick={() => setMenuOpen(true)}
@@ -174,62 +174,44 @@ export default function Hero() {
 
           </h1>
 
-          <p className="text-lg md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
+          <div className="max-w-3xl">
 
-            Las inmobiliarias tradicionales cobran miles de euros en comisiones por un trabajo que debería ser transparente.
+  
+            <p className="text-xl md:text-2xl text-gray-600 mb-4">
+              <span className="font-bold text-green-600">
+                AHORRO MEDIO
+              </span>{" "}
+                de nuestros clientes
+            </p>
 
-            <br />
-            <br />
+            <h2 className="text-6xl md:text-8xl font-extrabold text-green-600 leading-none">
+                4.500€
+            </h2>
 
-            En CasaYa obtienes fotografía profesional, máxima difusión en portales, gestión integral y asesoramiento experto por una tarifa fija transparente.
-
-            <br />
-            <br />
-
-            ¿Por qué pagar miles de euros en comisiones si el resultado puede ser el mismo?
-
-          </p>
-
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="relative"
-        >
-
-          <div className="rounded-[35px] md:rounded-[45px] overflow-hidden relative group flex items-center justify-center min-h-[420px] md:min-h-[760px]">
-
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[500px] h-[500px] rounded-full bg-green-100 blur-3xl opacity-70"></div>
-            </div>
-
-            <img
-              src="/images/mascot.jpg"
-              alt="CasaYa Mascota"
-              className="relative z-10 w-full h-[420px] md:h-[760px] object-contain group-hover:scale-105 transition duration-[2500ms]"
-  />
-
-          </div>
-
-          <div className="absolute bottom-6 left-6 bg-white rounded-[30px] p-5 shadow-2xl max-w-[280px]">
-
-           <p className="text-gray-500 text-sm mb-2">
-            Nuestros clientes ahorran
-           </p>
-
-            <h3 className="text-4xl font-bold text-green-600">
-              +4.500€
-            </h3>
-
-            <p className="text-gray-600 mt-2">
-              Frente a las inmobiliarias tradicionales
+            <p className="text-2xl md:text-3xl font-semibold text-gray-900 mt-3">
+                por transacción
             </p>
 
           </div>
 
         </motion.div>
+
+      
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="relative flex justify-end items-center"
+          >
+             
+            <img
+              src="/images/mascot.png"
+              alt="CasaYa Mascota"
+              className="w-full max-w-[1150px] h-auto object-contain"
+            />
+
+          </motion.div>
+         
 
       </div>
 
