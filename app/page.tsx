@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Properties from "@/components/Properties";
 import Valuation from "@/components/Valuation";
+import Team from "@/components/Team";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,10 +16,12 @@ export default function Home() {
 
       <Valuation />
 
-      <section className="py-20 bg-white">
+      <Team />
+
+      <section className="py-20 bg-[#eef5e8]">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
 
-          <div className="bg-[#eef5e8] rounded-[40px] p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-10">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
 
             <div className="max-w-3xl">
 

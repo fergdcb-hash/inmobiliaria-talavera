@@ -12,72 +12,129 @@ export default function Properties() {
         <div className="mb-16 md:mb-20">
 
           <p className="text-green-600 font-semibold tracking-[0.2em] mb-5">
-            PROPIEDAD DESTACADA
+            VIVIENDAS DESTACADAS
           </p>
 
           <h2 className="text-[3rem] md:text-[4.5rem] leading-[1] font-bold text-gray-900 max-w-4xl">
-            Vivienda en Arenas de San Pedro
+            Viviendas en Talavera y Comarca
           </h2>
 
         </div>
 
-        {/* VIVIENDA */}
-        <a
-              href="/propiedad"
-               className="group block max-w-[900px] mx-auto bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
->
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
 
-          {/* FOTO PRINCIPAL */}
-          <div className="overflow-hidden">
+          {/* VIVIENDA IZQUIERDA */}
+          <div className="bg-white rounded-[40px] overflow-hidden shadow-premium">
 
-            <img
-              src="/images/property/1.jpg"
-              alt="Vivienda"
-              className="w-full h-[320px] md:h-[450px] object-cover group-hover:scale-105 transition duration-[2000ms]"
-            />
+            <div className="h-[320px] md:h-[450px] bg-gray-100 flex items-center justify-center">
+              <p className="text-gray-400 text-xl font-semibold">
+                Próximamente
+              </p>
+            </div>
 
-          </div>
+            <div className="p-6">
 
-          {/* INFORMACIÓN */}
-          <div className="p-4 md:p-5">
-
-            <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-
-              <p className="text-gray-500 text-base">
-                Arenas de San Pedro (Ávila)
+              <p className="text-gray-400 mb-3">
+                Nueva captación
               </p>
 
-              <span className="bg-red-100 text-red-700 px-4 py-2 rounded-full font-semibold">
-                Vendida
-              </span>
+              <h3 className="text-2xl font-bold text-gray-400 mb-3">
+                Próxima vivienda disponible
+              </h3>
+
+              <p className="text-gray-400">
+                Estamos preparando una nueva vivienda para su publicación.
+              </p>
 
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-              Piso reformado en urbanización privada
-            </h3>
+          </div>
 
-            <p className="text-sm md:text-base text-gray-600 mb-4 max-w-2xl">
-              Vivienda de 80 m² recientemente reformada en urbanización privada
-              con piscina, rodeada de naturaleza y zonas ajardinadas. Dispone de
-              2 habitaciones, 1 baño, amplias terrazas y aparcamiento privado.
-            </p>
+          {/* VIVIENDA CENTRAL */}
+          <a
+            href="/propiedad"
+            className="group block bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
+          >
 
-            <div className="flex items-center justify-between">
-
-              <p className="text-3xl md:text-4xl font-bold text-red-600">
+            <div className="overflow-hidden">
+              
+              <div className="absolute top-8 -right-14 rotate-45 bg-red-600 text-white font-bold py-2 px-20 z-20 shadow-lg">
                 VENDIDA
+              </div>
+              
+              <img
+                src="/images/property/1.jpg"
+                alt="Vivienda"
+                className="w-full h-[320px] md:h-[450px] object-cover group-hover:scale-105 transition duration-[2000ms]"
+              />
+
+            </div>
+
+            <div className="p-5">
+
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+
+                <p className="text-gray-500 text-base">
+                  Arenas de San Pedro (Ávila)
+                </p>
+
+                <span className="bg-red-100 text-red-700 px-4 py-2 rounded-full font-semibold">
+                  Vendida
+                </span>
+
+              </div>
+
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                Piso reformado en urbanización privada
+              </h3>
+
+              <p className="text-sm md:text-base text-gray-600 mb-4">
+                Vivienda de 80 m² recientemente reformada en urbanización
+                privada con piscina, rodeada de naturaleza y zonas ajardinadas.
+                Dispone de 2 habitaciones, 1 baño, amplias terrazas y
+                aparcamiento privado.
               </p>
 
-              <div className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
-                →
+              <div className="flex justify-end">
+
+                <div className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
+                  →
+                </div>
+
               </div>
 
             </div>
 
+          </a>
+
+          {/* VIVIENDA DERECHA */}
+          <div className="bg-white rounded-[40px] overflow-hidden shadow-premium">
+
+            <div className="h-[320px] md:h-[450px] bg-gray-100 flex items-center justify-center">
+              <p className="text-gray-400 text-xl font-semibold">
+                Próximamente
+              </p>
+            </div>
+
+            <div className="p-6">
+
+              <p className="text-gray-400 mb-3">
+                Nueva captación
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-400 mb-3">
+                Próxima vivienda disponible
+              </h3>
+
+              <p className="text-gray-400">
+                Estamos preparando una nueva vivienda para su publicación.
+              </p>
+
+            </div>
+
           </div>
 
-        </a>
+        </div>
 
       </div>
     </section>

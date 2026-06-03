@@ -40,7 +40,7 @@ export default function Services() {
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
               Valoración profesional del inmueble, reportaje fotográfico de alta calidad,
               posicionamiento destacado en portales inmobiliarios, soporte telefónico,
-              gestión de visitas y asesoramiento continuo hasta la venta o alquiler.
+              gestión de visitas y asesoramiento continuo hasta la venta.
               Todo incluido por una tarifa fija (desde 2.499€ + IVA).
             </p>
 
