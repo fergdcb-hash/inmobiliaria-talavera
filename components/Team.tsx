@@ -56,20 +56,20 @@ export default function Team() {
 
             <img
               src="/images/team/hermano.jpg"
-              alt="Socio"
+              alt="Eduardo"
               className="w-full h-[450px] object-cover"
             />
 
             <div className="p-6">
 
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Tu Hermano
+                Eduardo Gomez
               </h3>
 
               <p className="text-gray-600">
-                Responsable de operaciones y atención al cliente, garantizando
-                un servicio cercano y profesional durante todo el proceso de
-                venta o alquiler.
+                Cofundador de CasaYa. Especializado en operaciones, atención al
+                cliente y gestión de procesos, asegurando una experiencia cercana,
+                eficiente y profesional para cada propietario.
               </p>
 
             </div>
