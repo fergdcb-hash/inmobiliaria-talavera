@@ -56,7 +56,7 @@ export default function Properties() {
             className="group block bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
           >
 
-            <div className="overflow-hidden">
+            <div className="overflow-hidden relative">
               
               <div className="absolute top-8 -right-14 rotate-45 bg-red-600 text-white font-bold py-2 px-20 z-20 shadow-lg">
                 VENDIDA
