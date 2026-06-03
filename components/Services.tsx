@@ -2,7 +2,7 @@ export default function Services() {
   return (
     <section
       id="servicios"
-      className="relative py-24 md:py-36 overflow-hidden"
+      className="relative py-24 md:py-36 overflow-hidden bg-[#f6faf3]"
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-8 relative z-10">
 

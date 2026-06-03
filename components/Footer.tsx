@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
 
             <p className="text-gray-400 leading-relaxed text-lg">
-              Inmobiliaria premium especializada en viviendas exclusivas en Talavera de la Reina.
+              Inmobiliaria de bajo coste, especializada en la zona de Talavera De La Reina, su comarca y el Valle del Tietar.
             </p>
 
           </div>

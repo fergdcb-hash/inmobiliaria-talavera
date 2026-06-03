@@ -2,7 +2,7 @@
 
 export default function Team() {
   return (
-    <section className="py-24 md:py-32 bg-[#eef5e8]">
+    <section className="py-24 md:py-32 bg-[#eef7e7]">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
 
         <div className="text-center mb-16">
@@ -33,7 +33,7 @@ export default function Team() {
             <img
               src="/images/team/fernando.jpg"
               alt="Fernando"
-              className="w-full h-[450px] object-cover"
+              className="w-full h-[300px] object-cover"
             />
 
             <div className="p-6">
@@ -57,7 +57,7 @@ export default function Team() {
             <img
               src="/images/team/hermano.jpg"
               alt="Eduardo"
-              className="w-full h-[450px] object-cover"
+              className="w-full h-[300px] object-cover"
             />
 
             <div className="p-6">

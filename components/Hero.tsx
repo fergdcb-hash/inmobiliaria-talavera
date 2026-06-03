@@ -196,21 +196,23 @@ export default function Hero() {
 
         </motion.div>
 
-      
-          <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="relative flex justify-end items-center"
-          >
-             
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="relative flex justify-end items-center"
+        >
+
+          <div className="absolute w-[650px] h-[650px] bg-green-100 rounded-full blur-[120px] opacity-60"></div>
+
             <img
               src="/images/mascot.png"
               alt="CasaYa Mascota"
-              className="w-full max-w-[1150px] h-auto object-contain"
+              className="relative z-10 w-full max-w-[1150px] h-auto object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.12)]"
             />
 
-          </motion.div>
+        </motion.div>
+          
          
 
       </div>

@@ -2,7 +2,7 @@ export default function Valuation() {
   return (
     <section
       id="contacto"
-      className="relative bg-[#eef5e8] py-40 overflow-hidden"
+      className="relative bg-[#e7f1df] py-40 overflow-hidden"
     >
       {/* EFECTOS DE FONDO */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-green-200 blur-[140px] rounded-full opacity-40"></div>
