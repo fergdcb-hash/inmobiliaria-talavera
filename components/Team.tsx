@@ -28,7 +28,7 @@ export default function Team() {
         <div className="grid md:grid-cols-2 gap-10">
 
           {/* TU FOTO */}
-          <div className="bg-white rounded-[40px] overflow-hidden shadow-premium">
+          <div className="bg-white rounded-[40px] overflow-hidden shadow-premium max-w-[350px] mx-auto">
 
             <img
               src="/images/team/fernando.jpg"
@@ -52,12 +52,12 @@ export default function Team() {
           </div>
 
           {/* FOTO DE TU HERMANO */}
-          <div className="bg-white rounded-[40px] overflow-hidden shadow-premium">
+          <div className="bg-white rounded-[40px] overflow-hidden shadow-premium max-w-[350px] mx-auto">
 
             <img
-              src="/images/team/hermano.jpg"
+              src="/images/Team/Eduardo.jpg"
               alt="Eduardo"
-              className="w-full h-[300px] object-cover"
+              className="w-full h-[550px] object-cover object-top"
             />
 
             <div className="p-6">
