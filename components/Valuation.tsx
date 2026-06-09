@@ -14,7 +14,7 @@ export default function Valuation() {
         {/* IZQUIERDA */}
         <div>
 
-          <p className="text-green-600 font-semibold text-lg mb-5 tracking-[0.2em]">
+          <p className="text-[#0B5D4B] font-semibold text-lg mb-5 tracking-[0.2em]">
             CONTACTO Y VALORACIÓN GRATUITA
           </p>
 
@@ -75,7 +75,7 @@ export default function Valuation() {
                 className="p-5 rounded-2xl border border-gray-200 text-xl outline-none focus:border-green-500"
               />
 
-              <button className="bg-green-600 hover:bg-green-700 text-white py-5 rounded-2xl text-2xl font-semibold shadow-xl transition">
+              <button className="bg-[#0B5D4B] hover:bg-[#084738] text-white py-5 rounded-2xl text-2xl font-semibold shadow-xl transition">
                 Solicitar valoración gratuita
               </button>
 

@@ -11,12 +11,16 @@ export default function Footer() {
 
             <div className="flex items-center gap-3 mb-6">
 
-              <div className="w-10 h-10 rounded-2xl bg-green-600 flex items-center justify-center">
-                🏡
+              <div className="w-10 h-10 rounded-2xl bg-[#0B5D4B] flex items-center justify-center">
+                <img
+                  src="/images/logo.jpg"
+                  alt="Hogazo"
+                  className="h-12 w-auto"
+                />
               </div>
 
               <h2 className="text-3xl font-bold">
-                CasaYa
+                Hogazo
               </h2>
 
             </div>
@@ -90,7 +94,7 @@ export default function Footer() {
 
             <div className="flex gap-4">
 
-              <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center hover:bg-green-600 transition cursor-pointer">
+              <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center hover:bg-[#0B5D4B] transition cursor-pointer">
                 Instagram
               </div>
 

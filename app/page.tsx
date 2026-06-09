@@ -25,8 +25,8 @@ export default function Home() {
 
             <div className="max-w-3xl">
 
-              <p className="text-green-600 font-semibold tracking-[0.2em] mb-4">
-                CASAYA
+              <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-4">
+                HOGAZO
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -44,7 +44,7 @@ export default function Home() {
 
             <a
               href="#contacto"
-              className="bg-green-600 hover:bg-green-700 text-white px-10 py-5 rounded-2xl text-xl font-semibold shadow-xl transition hover:scale-105"
+              className="bg-[#0B5D4B] hover:hover:bg-[#084738] text-white px-10 py-5 rounded-2xl text-xl font-semibold shadow-xl transition hover:scale-105"
             >
               Contactar
             </a>

@@ -4,24 +4,24 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
 
         <h1 className="text-4xl font-bold text-white">
-          CasaYa
+          Hogazo
         </h1>
 
         <div className="hidden md:flex items-center gap-10 text-white text-lg">
 
-          <a href="#" className="hover:text-green-300 transition">
+          <a href="#" className="hover:bg-[#D3E0D8] transition">
             Inicio
           </a>
 
-          <a href="#servicios" className="hover:text-green-300 transition">
+          <a href="#servicios" className="hover:bg-[#D3E0D8] transition">
             Servicios
           </a>
 
-          <a href="#propiedades" className="hover:text-green-300 transition">
+          <a href="#propiedades" className="hover:bg-[#D3E0D8] transition">
             Propiedades
           </a>
 
-          <a href="#contacto" className="hover:text-green-300 transition">
+          <a href="#contacto" className="hover:bg-[#D3E0D8] transition">
             Contacto
           </a>
 

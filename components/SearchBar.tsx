@@ -18,7 +18,7 @@ export default function SearchBar() {
           {/* TOP */}
           <div className="flex flex-wrap gap-3 mb-6">
 
-            <button className="bg-green-600 text-white px-6 py-3 rounded-2xl font-semibold">
+            <button className="bg-[#0B5D4B] text-white px-6 py-3 rounded-2xl font-semibold">
               Comprar
             </button>
 
@@ -40,7 +40,7 @@ export default function SearchBar() {
 
               <div className="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center">
 
-                <MapPin className="text-green-600" />
+                <MapPin className="text-[#0B5D4B]" />
 
               </div>
 
@@ -117,7 +117,7 @@ export default function SearchBar() {
             </div>
 
             {/* BUSCAR */}
-            <button className="bg-green-600 hover:bg-green-700 transition rounded-3xl text-white font-bold text-xl flex items-center justify-center gap-3 min-h-[110px] shadow-lg hover:scale-[1.02]">
+            <button className="bg-[#0B5D4B] hover:hover:bg-[#084738] transition rounded-3xl text-white font-bold text-xl flex items-center justify-center gap-3 min-h-[110px] shadow-lg hover:scale-[1.02]">
 
               <Search />
 

@@ -30,7 +30,7 @@ export default function PropertyPage() {
 
       <div className="mb-10">
 
-        <p className="text-green-600 font-semibold tracking-[0.2em] mb-3">
+        <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-3">
           PROPIEDAD DESTACADA
         </p>
 
@@ -38,7 +38,7 @@ export default function PropertyPage() {
             Vivienda reformada en Arenas de San Pedro
         </h1>
 
-        <p className="text-2xl font-bold text-green-600">
+        <p className="text-2xl font-bold text-[#0B5D4B]">
           VENDIDA
         </p>
 
@@ -75,7 +75,7 @@ export default function PropertyPage() {
             key={index}
             className={`h-3 rounded-full transition-all ${
               current === index
-                ? "w-10 bg-green-600"
+                ? "w-10 bg-[#0B5D4B]"
                 : "w-3 bg-gray-300"
             }`}
           />

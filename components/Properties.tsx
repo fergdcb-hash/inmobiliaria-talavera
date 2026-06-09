@@ -11,7 +11,7 @@ export default function Properties() {
         {/* HEADER */}
         <div className="mb-16 md:mb-20">
 
-          <p className="text-green-600 font-semibold tracking-[0.2em] mb-5">
+          <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-5">
             VIVIENDAS DESTACADAS
           </p>
 
@@ -97,7 +97,7 @@ export default function Properties() {
 
               <div className="flex justify-end">
 
-                <div className="w-14 h-14 rounded-full bg-green-600 text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
+                <div className="w-14 h-14 rounded-full bg-[#0B5D4B] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
                   →
                 </div>
 

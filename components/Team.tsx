@@ -7,7 +7,7 @@ export default function Team() {
 
         <div className="text-center mb-16">
 
-          <p className="text-green-600 font-semibold tracking-[0.2em] mb-4">
+          <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-4">
             EQUIPO
           </p>
 

@@ -8,7 +8,7 @@ export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <section className="bg-transparent min-h-screen overflow-hidden">
+    <section className="bg-[#F2EFE7] min-h-screen overflow-hidden">
 
       <motion.header
         initial={{ opacity: 0, y: -40 }}
@@ -20,12 +20,17 @@ export default function Hero() {
 
           <div className="flex items-center gap-3">
 
-            <div className="w-10 h-10 rounded-2xl bg-green-600 flex items-center justify-center text-white text-lg">
-              🏡
+            <img
+              src="/images/logo.jpg"
+              alt="Hogazo Inmobiliaria"
+              className="h-14 w-auto"
+            />
+          <div className="w-10 h-10 rounded-2xl bg-[#0B5D4B] flex items-center justify-center text-white text-lg">
+              
             </div>
 
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
-              CasaYa
+              Hogazo
             </h1>
 
           </div>
@@ -52,7 +57,7 @@ export default function Hero() {
 
             <a
               href="#contacto"
-              className="hidden lg:flex bg-green-600 hover:bg-green-700 hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
+              className="hidden lg:flex bg-[#0B5D4B] hover:hover:bg-[#084738] hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
             >
               Valora Tu Casa
             </a>
@@ -83,12 +88,16 @@ export default function Hero() {
 
               <div className="flex items-center gap-3">
 
-                <div className="w-10 h-10 rounded-2xl bg-green-600 flex items-center justify-center text-white">
-                  🏡
+                <div className="w-10 h-10 rounded-2xl bg-[#0B5D4B] flex items-center justify-center text-white">
+                  <img
+                    src="/images/logo.jpg"
+                    alt="Hogazo"
+                    className="h-12 w-auto"
+                  />
                 </div>
 
                 <h2 className="text-2xl font-bold">
-                  CasaYa
+                  Hogazo
                 </h2>
 
               </div>
@@ -127,7 +136,7 @@ export default function Hero() {
               <a
                 href="#contacto"
                 onClick={() => setMenuOpen(false)}
-                className="bg-green-600 hover:bg-green-700 transition text-white w-full py-5 rounded-2xl text-xl font-semibold flex items-center justify-center shadow-lg"
+                className="bg-[#0B5D4B] hover:bg-[#084738] transition text-white w-full py-5 rounded-2xl text-xl font-semibold flex items-center justify-center shadow-lg"
               >
                 Contacto
               </a>
@@ -164,7 +173,7 @@ export default function Hero() {
             Vende o alquila
             <br />
 
-            <span className="text-green-600">
+            <span className="text-[#0B5D4B]">
               tu vivienda
             </span>
 
@@ -178,13 +187,13 @@ export default function Hero() {
 
   
             <p className="text-xl md:text-2xl text-gray-600 mb-4">
-              <span className="font-bold text-green-600">
+              <span className="font-bold text-[#0B5D4B]">
                 AHORRO MEDIO
               </span>{" "}
                 de nuestros clientes
             </p>
 
-            <h2 className="text-6xl md:text-8xl font-extrabold text-green-600 leading-none">
+            <h2 className="text-6xl md:text-8xl font-extrabold text-[#C96E43] leading-none">
                 4.500€
             </h2>
 
@@ -206,7 +215,7 @@ export default function Hero() {
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-green-50 opacity-90 blur-[140px]"></div>
           <img
             src="/images/mascot.png"
-            alt="CasaYa Mascota"
+            alt="Hogazo Mascota"
             className="relative z-10 w-full max-w-[950px] h-auto object-contain drop-shadow-[0_35px_70px_rgba(0,0,0,0.15)]"
           />
 

@@ -15,7 +15,7 @@ export default function LuxuryCards() {
           Chalet de lujo
         </h3>
 
-        <p className="text-green-300 text-3xl font-bold">
+        <p className="bg-[#D3E0D8] text-3xl font-bold">
           699.900€
         </p>
 

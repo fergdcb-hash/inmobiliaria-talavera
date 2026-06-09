@@ -9,7 +9,7 @@ export default function Services() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16 md:mb-20">
 
           <div>
-            <p className="text-green-600 font-semibold tracking-[0.2em] mb-5">
+            <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-5">
               SERVICIOS
             </p>
 
@@ -46,7 +46,7 @@ export default function Services() {
 
             <a
               href="#contacto"
-              className="mt-auto inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+              className="mt-auto inline-flex items-center justify-center bg-[#0B5D4B] hover:bg-[#084738] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
             >
               Quiero vender
             </a>
@@ -82,7 +82,7 @@ export default function Services() {
 
             <a
               href="#contacto"
-              className="mt-auto inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+              className="mt-auto inline-flex items-center justify-center bg-[#0B5D4B] hover:bg-[#084738] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
             >
               Quiero alquilar
             </a>
@@ -114,7 +114,7 @@ export default function Services() {
 
             <a
               href="#contacto"
-              className="mt-auto inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+              className="mt-auto inline-flex items-center justify-center bg-[#0B5D4B] hover:bg-[#084738] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
             >
               Quiero gestionar
             </a>

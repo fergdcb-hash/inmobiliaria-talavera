@@ -7,7 +7,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "CasaYa",
+  title: "Hogazo",
   description: "Inmobiliaria premium en Talavera",
 };
 
