@@ -4,7 +4,7 @@ export default function Properties() {
   return (
     <section
       id="propiedades"
-      className="py-24 md:py-36 overflow-hidden bg-[#eef5e8]"
+      className="py-24 md:py-36 overflow-hidden bg-[#F4F1EA]"
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-8">
 

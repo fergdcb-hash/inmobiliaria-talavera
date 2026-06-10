@@ -2,19 +2,19 @@ export default function Valuation() {
   return (
     <section
       id="contacto"
-      className="relative bg-[#e7f1df] py-40 overflow-hidden"
+      className="relative bg-[#F7F4EE] py-40 overflow-hidden"
     >
       {/* EFECTOS DE FONDO */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-green-200 blur-[140px] rounded-full opacity-40"></div>
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#E7DDD1] blur-[140px] rounded-full opacity-40"></div>
 
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-100 blur-[140px] rounded-full opacity-50"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#EADFD4] blur-[140px] rounded-full opacity-50"></div>
 
       <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center relative z-10">
 
         {/* IZQUIERDA */}
         <div>
 
-          <p className="text-[#0B5D4B] font-semibold text-lg mb-5 tracking-[0.2em]">
+          <p className="text-[#C96E43] font-semibold text-lg mb-5 tracking-[0.2em]">
             CONTACTO Y VALORACIÓN GRATUITA
           </p>
 
@@ -43,7 +43,7 @@ export default function Valuation() {
         {/* DERECHA */}
         <div>
 
-          <div className="bg-white rounded-[45px] p-10 shadow-2xl">
+          <div className="bg-[#FBFAF7] rounded-[45px] p-10 shadow-2xl border border-[#E6DED3]">
 
             <h3 className="text-4xl font-bold text-gray-900 mb-10">
               Contacta con nosotros
@@ -54,28 +54,28 @@ export default function Valuation() {
               <input
                 type="text"
                 placeholder="Nombre"
-                className="p-5 rounded-2xl border border-gray-200 text-xl outline-none focus:border-green-500"
+                className="p-5 rounded-2xl border border-[#D8D1C5] text-xl outline-none focus:border-green-500"
               />
 
               <input
                 type="tel"
                 placeholder="Teléfono"
-                className="p-5 rounded-2xl border border-gray-200 text-xl outline-none focus:border-green-500"
+                className="p-5 rounded-2xl border border-[#D8D1C5] text-xl outline-none focus:border-green-500"
               />
 
               <input
                 type="email"
                 placeholder="Correo electrónico"
-                className="p-5 rounded-2xl border border-gray-200 text-xl outline-none focus:border-green-500"
+                className="p-5 rounded-2xl border border-[#D8D1C5] text-xl outline-none focus:border-green-500"
               />
 
               <input
                 type="text"
                 placeholder="Dirección de la vivienda"
-                className="p-5 rounded-2xl border border-gray-200 text-xl outline-none focus:border-green-500"
+                className="p-5 rounded-2xl border border-[#D8D1C5] text-xl outline-none focus:border-green-500"
               />
 
-              <button className="bg-[#0B5D4B] hover:bg-[#084738] text-white py-5 rounded-2xl text-2xl font-semibold shadow-xl transition">
+              <button className="bg-[#C96E43] hover:bg-[#B85E36] text-white py-5 rounded-2xl text-2xl font-semibold shadow-xl transition">
                 Solicitar valoración gratuita
               </button>
 

@@ -38,7 +38,7 @@ export default function SearchBar() {
             {/* ZONA */}
             <div className="bg-[#f8f8f8] rounded-3xl p-5 flex items-center gap-4">
 
-              <div className="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-[#D6E1D7] flex items-center justify-center">
 
                 <MapPin className="text-[#0B5D4B]" />
 

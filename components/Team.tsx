@@ -2,7 +2,7 @@
 
 export default function Team() {
   return (
-    <section className="py-24 md:py-32 bg-[#eef7e7]">
+    <section className="py-24 md:py-32 bg-[#F7F4EE]">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
 
         <div className="text-center mb-16">
@@ -12,7 +12,7 @@ export default function Team() {
           </p>
 
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Personas detrás de CasaYa
+            Personas detrás de Hogazo
           </h2>
 
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">

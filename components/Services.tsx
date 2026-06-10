@@ -2,7 +2,7 @@ export default function Services() {
   return (
     <section
       id="servicios"
-      className="relative py-24 md:py-36 overflow-hidden bg-[#f6faf3]"
+      className="relative py-24 md:py-36 overflow-hidden bg-[#F4F1EA]"
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-8 relative z-10">
 
@@ -23,7 +23,7 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* CARD 1 */}
-          <div className="group bg-[#eef5e8] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium flex flex-col">
+          <div className="group bg-[#F4F1EA] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium flex flex-col">
 
             <div className="bg-white rounded-[30px] h-[220px] md:h-[260px] overflow-hidden mb-8">
               <img
@@ -33,7 +33,7 @@ export default function Services() {
               />
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-green-700 mb-5">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#0B5D4B] mb-5">
               Venta Low-Cost con Servicio Premium
             </h3>
 
@@ -54,7 +54,7 @@ export default function Services() {
           </div>
 
           {/* CARD 2 */}
-          <div className="group bg-[#f3ecff] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium flex flex-col">
+          <div className="group bg-[#EEF4F0] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium flex flex-col">
 
             <div className="bg-white rounded-[30px] h-[220px] md:h-[260px] overflow-hidden mb-8">
               <video
@@ -68,7 +68,7 @@ export default function Services() {
               </video>
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-purple-700 mb-5">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#0B5D4B] mb-5">
               Alquiler sin sorpresas
             </h3>
 
@@ -90,7 +90,7 @@ export default function Services() {
           </div>
 
           {/* CARD 3 */}
-          <div className="group bg-[#edf4ff] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium flex flex-col">
+          <div className="group bg-[#F5F1EA] rounded-[35px] md:rounded-[45px] p-6 md:p-8 shadow-premium flex flex-col">
 
             <div className="bg-white rounded-[30px] h-[220px] md:h-[260px] overflow-hidden mb-8">
               <img
@@ -100,7 +100,7 @@ export default function Services() {
               />
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-5">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#0B5D4B] mb-5">
               Gestión turística
             </h3>
 

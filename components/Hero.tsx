@@ -23,7 +23,7 @@ export default function Hero() {
             <img
               src="/images/logo.jpg"
               alt="Hogazo Inmobiliaria"
-              className="h-14 w-auto"
+              className="h-12 w-auto"
             />
           <div className="w-10 h-10 rounded-2xl bg-[#0B5D4B] flex items-center justify-center text-white text-lg">
               
@@ -160,7 +160,7 @@ export default function Hero() {
 
           <div className="inline-flex items-center gap-3 bg-white rounded-full px-4 md:px-5 py-2 md:py-3 shadow-premium mb-6 md:mb-8">
 
-            <div className="w-3 h-3 rounded-full bg-green-500"></div>
+            <div className="w-3 h-3 rounded-full bg-[#F4F1EA]"></div>
 
             <p className="text-gray-700 font-medium text-sm md:text-base">
               La inmobiliaria que mira por tu bolsillo
@@ -212,7 +212,7 @@ export default function Hero() {
           className="relative flex justify-center items-center"
         >
 
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-green-50 opacity-90 blur-[140px]"></div>
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-[#F4F1EA] opacity-90 blur-[140px]"></div>
           <img
             src="/images/mascot.png"
             alt="Hogazo Mascota"

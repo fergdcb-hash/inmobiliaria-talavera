@@ -18,14 +18,14 @@ export default function Home() {
 
       <Team />
 
-      <section className="py-20 bg-[#e3efdb]">
+      <section className="py-20 bg-[#F7F4EE]">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
 
             <div className="max-w-3xl">
 
-              <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-4">
+              <p className="text-[#C96E43] font-semibold tracking-[0.2em] mb-4">
                 HOGAZO
               </p>
 
@@ -44,7 +44,7 @@ export default function Home() {
 
             <a
               href="#contacto"
-              className="bg-[#0B5D4B] hover:hover:bg-[#084738] text-white px-10 py-5 rounded-2xl text-xl font-semibold shadow-xl transition hover:scale-105"
+              className="bg-[#C96E43] hover:bg-[#B85E36] text-white px-10 py-5 rounded-2xl text-xl font-semibold shadow-xl transition hover:scale-105"
             >
               Contactar
             </a>
