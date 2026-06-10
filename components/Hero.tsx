@@ -187,7 +187,7 @@ export default function Hero() {
 
   
             <p className="text-xl md:text-2xl text-gray-600 mb-4">
-              <span className="font-bold text-[#0B5D4B]">
+              <span className="font-bold text-[#C96E43]">
                 AHORRO MEDIO
               </span>{" "}
                 de nuestros clientes
@@ -197,7 +197,7 @@ export default function Hero() {
                 4.500€
             </h2>
 
-            <p className="text-2xl md:text-3xl font-semibold text-gray-900 mt-3">
+            <p className="text-2xl md:text-3xl font-semibold text-[#0B5D4B] mt-3">
                 por transacción
             </p>
 

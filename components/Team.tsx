@@ -11,7 +11,7 @@ export default function Team() {
             EQUIPO
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#0B5D4B] mb-6">
             Personas detrás de Hogazo
           </h2>
 
@@ -38,7 +38,7 @@ export default function Team() {
 
             <div className="p-6">
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold text-[#0B5D4B] mb-2">
                 Fernando Gómez
               </h3>
 
@@ -62,7 +62,7 @@ export default function Team() {
 
             <div className="p-6">
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold text-[#0B5D4B] mb-2">
                 Eduardo Gomez
               </h3>
 
