@@ -168,12 +168,12 @@ export default function Hero() {
 
           </div>
 
-          <h1 className="text-[3.2rem] md:text-[5.5rem] leading-[0.95] font-bold text-gray-900 mb-6 md:mb-8">
+          <h1 className="text-[3.2rem] md:text-[5.5rem] leading-[0.95] font-bold text-[#0B5D4B] mb-6 md:mb-8">
 
             Vende o alquila
             <br />
 
-            <span className="text-[#0B5D4B]">
+            <span className="text-[#C96E43]">
               tu vivienda
             </span>
 
