@@ -216,7 +216,7 @@ export default function Hero() {
           <img
             src="/images/mascot.png"
             alt="Hogazo Mascota"
-            className="relative z-10 w-full max-w-[950px] h-auto object-contain drop-shadow-[0_35px_70px_rgba(0,0,0,0.15)]"
+            className="relative z-10 w-full max-w-[1000px] h-auto object-contain drop-shadow-[0_35px_70px_rgba(0,0,0,0.15)]"
           />
 
         </motion.div>
