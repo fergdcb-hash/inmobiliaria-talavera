@@ -24,31 +24,53 @@ export default function Properties() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
 
           {/* VIVIENDA IZQUIERDA */}
-          <div className="bg-white rounded-[40px] overflow-hidden shadow-premium">
+          <a
+            href="/propiedad-talavera"
+            className="group block bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
+          >
 
-            <div className="h-[320px] md:h-[450px] bg-gray-100 flex items-center justify-center">
-              <p className="text-gray-400 text-xl font-semibold">
-                Próximamente
-              </p>
+            <div className="overflow-hidden">
+              <img
+                src="/images/property/1%20(2).JPG"
+                alt="Piso en Talavera"
+                className="w-full h-[320px] md:h-[450px] object-cover group-hover:scale-105 transition duration-[2000ms]"
+              />
             </div>
 
-            <div className="p-6">
+            <div className="p-5">
 
-              <p className="text-gray-400 mb-3">
-                Nueva captación
-              </p>
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
 
-              <h3 className="text-2xl font-bold text-gray-400 mb-3">
-                Próxima vivienda disponible
+                <p className="text-gray-500 text-base">
+                   Talavera de la Reina
+                </p>
+
+                <span className="bg-[#0B5D4B]/10 text-[#0B5D4B] px-4 py-2 rounded-full font-semibold">
+                  Nueva
+                </span>
+
+              </div>
+
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                 Piso con vistas panorámicas
               </h3>
 
-              <p className="text-gray-400">
-                Estamos preparando una nueva vivienda para su publicación.
+              <p className="text-sm md:text-base text-gray-600 mb-4">
+                 Amplia vivienda en una de las mejores zonas de Talavera de la Reina,
+                 con impresionantes vistas despejadas y múltiples posibilidades.
               </p>
+
+              <div className="flex justify-end">
+
+                <div className="w-14 h-14 rounded-full bg-[#0B5D4B] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
+                  →
+              </div>
 
             </div>
 
-          </div>
+           </div>
+
+          </a>
 
           {/* VIVIENDA CENTRAL */}
           <a

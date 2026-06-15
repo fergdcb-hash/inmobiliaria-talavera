@@ -46,7 +46,7 @@ export default function Services() {
 
             <a
               href="#contacto"
-              className="mt-auto inline-flex items-center justify-center bg-[#0B5D4B] hover:bg-[#084738] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+              className="mt-auto inline-flex items-center justify-center bg-[#C96E43] hover:bg-[#C96E43] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
             >
               Quiero vender
             </a>
@@ -82,7 +82,7 @@ export default function Services() {
 
             <a
               href="#contacto"
-              className="mt-auto inline-flex items-center justify-center bg-[#0B5D4B] hover:bg-[#084738] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+              className="mt-auto inline-flex items-center justify-center bg-[#C96E43] hover:bg-[#C96E43] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
             >
               Quiero alquilar
             </a>
@@ -114,7 +114,7 @@ export default function Services() {
 
             <a
               href="#contacto"
-              className="mt-auto inline-flex items-center justify-center bg-[#0B5D4B] hover:bg-[#084738] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+              className="mt-auto inline-flex items-center justify-center bg-[#C96E43] hover:bg-[#C96E43] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
             >
               Quiero gestionar
             </a>

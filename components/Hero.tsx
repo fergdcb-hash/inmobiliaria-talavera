@@ -16,24 +16,26 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="sticky top-0 z-50 backdrop-blur-2xl bg-white/60 border-b border-white/20"
       >
-        <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-5 flex items-center justify-between">
+       <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-5 flex items-center justify-between">
+        <div className="flex items-center gap-4">
 
-          <div className="flex items-center gap-3">
+          <img
+            src="/images/logo.jpg"
+            alt="Hogazo Inmobiliaria"
+            className="h-16 md:h-20 w-auto rounded-2xl"
+          />
 
-            <img
-              src="/images/logo.jpg"
-              alt="Hogazo Inmobiliaria"
-              className="h-12 w-auto"
-            />
-          <div className="w-10 h-10 rounded-2xl bg-[#0B5D4B] flex items-center justify-center text-white text-lg">
-              
-            </div>
-
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
+          <div>
+            <h1 className="text-2xl font-bold text-[#0B5D4B]">
               Hogazo
             </h1>
 
+            <p className="text-sm text-gray-500">
+              Inmobiliaria
+            </p>
           </div>
+
+        </div>
 
           <nav className="hidden lg:flex items-center gap-10 text-gray-600 text-lg">
 
@@ -57,7 +59,7 @@ export default function Hero() {
 
             <a
               href="#contacto"
-              className="hidden lg:flex bg-[#0B5D4B] hover:hover:bg-[#084738] hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
+              className="hidden lg:flex bg-[#C96E43] hover:hover:bg-[#B85E36] hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
             >
               Valora Tu Casa
             </a>
@@ -186,7 +188,7 @@ export default function Hero() {
           <div className="max-w-3xl">
 
   
-            <p className="text-xl md:text-2xl text-gray-600 mb-4">
+            <p className="text-xl md:text-2xl text-[#0B5D4B] mb-4">
               <span className="font-bold text-[#C96E43]">
                 AHORRO MEDIO
               </span>{" "}
