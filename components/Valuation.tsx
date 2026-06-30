@@ -18,7 +18,7 @@ export default function Valuation() {
             CONTACTO Y VALORACIÓN GRATUITA
           </p>
 
-          <h2 className="text-[4rem] md:text-[5rem] leading-[1] font-bold text-[#0B5D4B] mb-10">
+          <h2 className="text-[4rem] md:text-[5rem] leading-[1] font-bold text-[#333333] mb-10">
             Descubre el valor real de tu casa
           </h2>
 
@@ -45,7 +45,7 @@ export default function Valuation() {
 
           <div className="bg-[#FBFAF7] rounded-[45px] p-10 shadow-2xl border border-[#E6DED3]">
 
-            <h3 className="text-4xl font-bold text-[#0B5D4B] mb-10">
+            <h3 className="text-4xl font-bold text-[#333333] mb-10">
               Contacta con nosotros
             </h3>
 

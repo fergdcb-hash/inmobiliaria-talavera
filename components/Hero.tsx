@@ -26,8 +26,8 @@ export default function Hero() {
           />
 
           <div>
-            <h1 className="text-2xl font-bold text-[#0B5D4B]">
-              Hogazo
+            <h1 className="text-2xl font-bold text-[#333333]">
+              Casayaa
             </h1>
 
             <p className="text-sm text-gray-500">
@@ -170,7 +170,7 @@ export default function Hero() {
 
           </div>
 
-          <h1 className="text-[3.2rem] md:text-[5.5rem] leading-[0.95] font-bold text-[#0B5D4B] mb-6 md:mb-8">
+          <h1 className="text-[3.2rem] md:text-[5.5rem] leading-[0.95] font-bold text-[#333333] mb-6 md:mb-8">
 
             Vende o alquila
             <br />
@@ -188,7 +188,7 @@ export default function Hero() {
           <div className="max-w-3xl">
 
   
-            <p className="text-xl md:text-2xl text-[#0B5D4B] mb-4">
+            <p className="text-xl md:text-2xl text-[#333333] mb-4">
               <span className="font-bold text-[#C96E43]">
                 AHORRO MEDIO
               </span>{" "}
@@ -199,7 +199,7 @@ export default function Hero() {
                 4.500€
             </h2>
 
-            <p className="text-2xl md:text-3xl font-semibold text-[#0B5D4B] mt-3">
+            <p className="text-2xl md:text-3xl font-semibold text-[#333333] mt-3">
                 por transacción
             </p>
 

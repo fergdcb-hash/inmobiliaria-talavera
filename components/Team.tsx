@@ -5,11 +5,11 @@ export default function Team() {
 
         <div className="text-center mb-12">
 
-          <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-4">
+          <p className="text-[#333333] font-semibold tracking-[0.2em] mb-4">
             ¿POR QUÉ ELEGIR CASA.YAA?
           </p>
 
-          <h2 className="text-5xl font-bold text-[#0B5D4B]">
+          <h2 className="text-5xl font-bold text-[#333333]">
             Ahorro, calidad y rapidez
           </h2>
 

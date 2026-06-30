@@ -9,11 +9,11 @@ export default function Services() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16 md:mb-20">
 
           <div>
-            <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-5">
+            <p className="text-[#333333] font-semibold tracking-[0.2em] mb-5">
               SERVICIOS
             </p>
 
-            <h2 className="text-[3rem] md:text-[4.5rem] leading-[1] font-bold text-[#0B5D4B] max-w-4xl">
+            <h2 className="text-[3rem] md:text-[4.5rem] leading-[1] font-bold text-[#333333] max-w-4xl">
               Nos encargamos de todo el proceso
             </h2>
           </div>
@@ -33,7 +33,7 @@ export default function Services() {
               />
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-[#0B5D4B] mb-5">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">
               Venta Low-Cost con Servicio Premium
             </h3>
 
@@ -68,7 +68,7 @@ export default function Services() {
               </video>
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-[#0B5D4B] mb-5">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">
               Alquiler sin sorpresas
             </h3>
 
@@ -100,7 +100,7 @@ export default function Services() {
               />
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-[#0B5D4B] mb-5">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">
               Gestión turística
             </h3>
 

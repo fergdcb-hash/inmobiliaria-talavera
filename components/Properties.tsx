@@ -10,11 +10,11 @@ export default function Properties() {
 
         {/* HEADER */}
         <div className="mb-16 md:mb-20">
-          <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-5">
+          <p className="text-[#333333] font-semibold tracking-[0.2em] mb-5">
             VIVIENDAS DESTACADAS
           </p>
 
-          <h2 className="text-[3rem] md:text-[4.5rem] leading-[1] font-bold text-[#0B5D4B] max-w-4xl">
+          <h2 className="text-[3rem] md:text-[4.5rem] leading-[1] font-bold text-[#333333] max-w-4xl">
             Viviendas en Talavera y Comarca
           </h2>
         </div>
