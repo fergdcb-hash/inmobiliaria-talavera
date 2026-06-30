@@ -1,0 +1,14 @@
+<svg height="150" viewbox="0 0 500 150" width="500" xmlns="http://www.w3.org/2000/svg">
+<!-- ISOTIPO: Casa con base de triángulo isósceles (Naranja Eléctrico #FF6600) -->
+<g transform="translate(20, 20)">
+<!-- Tejado exterior estilo Tecnocasa -->
+<path d="M 50,10 L 95,55 L 80,55 L 50,25 L 20,55 L 5,55 Z" fill="#FF6600"></path>
+<!-- Triángulo Isósceles Interior (Base) -->
+<polygon fill="#FF6600" points="50,40 15,85 85,85"></polygon>
+</g>
+<!-- TEXTO: casayaa en minúsculas con tipografía robusta y limpia -->
+<!-- "casa" en Antracita Oscuro (#333333) y "yaa" en Naranja Eléctrico (#FF6600) -->
+<text font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="900" letter-spacing="-2" x="140" y="95">
+<tspan fill="#333333">casa</tspan><tspan fill="#FF6600">yaa</tspan>
+</text>
+</svg>

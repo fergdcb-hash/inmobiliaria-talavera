@@ -1,60 +1,60 @@
-import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Properties from "@/components/Properties";
-import Valuation from "@/components/Valuation";
-import Team from "@/components/Team";
-import Footer from "@/components/Footer";
+  import Hero from "@/components/Hero";
+  import Services from "@/components/Services";
+  import Properties from "@/components/Properties";
+  import Valuation from "@/components/Valuation";
+  import Footer from "@/components/Footer";
+  import Team from "@/components/Team";
 
-export default function Home() {
-  return (
-    <main className="overflow-hidden">
-      <Hero />
+  export default function Home() {
+    return (
+      <main className="overflow-hidden">
+        <Hero />
 
-      <Services />
+        <Services />
 
-      <Properties />
+        <Properties />
 
-      <Valuation />
+        <Valuation />
 
-      <Team />
+        <Team />
 
-      <section className="py-20 bg-[#F7F4EE]">
-        <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <section className="py-20 bg-[#F7F4EE]">
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
 
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
 
-            <div className="max-w-3xl">
+              <div className="max-w-3xl">
 
-              <p className="text-[#C96E43] font-semibold tracking-[0.2em] mb-4">
-                HOGAZO
-              </p>
+                <p className="text-[#C96E43] font-semibold tracking-[0.2em] mb-4">
+                  HOGAZO
+                </p>
 
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-                La inmobiliaria que mira por tu bolsillo
-              </h2>
+                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+                  La inmobiliaria que mira por tu bolsillo
+                </h2>
 
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                Rompemos las reglas del mercado tradicional para ofrecer la
-                máxima calidad al menor coste posible. Un servicio profesional,
-                transparente y orientado a que vendas o alquiles tu vivienda sin
-                pagar comisiones abusivas.
-              </p>
+                <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                  Rompemos las reglas del mercado tradicional para ofrecer la
+                  máxima calidad al menor coste posible. Un servicio profesional,
+                  transparente y orientado a que vendas o alquiles tu vivienda sin
+                  pagar comisiones abusivas.
+                </p>
+
+              </div>
+
+              <a
+                href="#contacto"
+                className="bg-[#C96E43] hover:bg-[#B85E36] text-white px-10 py-5 rounded-2xl text-xl font-semibold shadow-xl transition hover:scale-105"
+              >
+                Contactar
+              </a>
 
             </div>
 
-            <a
-              href="#contacto"
-              className="bg-[#C96E43] hover:bg-[#B85E36] text-white px-10 py-5 rounded-2xl text-xl font-semibold shadow-xl transition hover:scale-105"
-            >
-              Contactar
-            </a>
-
           </div>
+        </section>
 
-        </div>
-      </section>
-
-      <Footer />
-    </main>
-  );
-}
+        <Footer />
+      </main>
+    );
+  }

@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="flex items-center gap-4">
 
           <img
-            src="/images/logo.jpg"
+            src="/images/logo-casayaa.svg"
             alt="Hogazo Inmobiliaria"
             className="h-16 md:h-20 w-auto rounded-2xl"
           />
