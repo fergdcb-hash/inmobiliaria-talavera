@@ -13,14 +13,14 @@ export default function Footer() {
 
               <div className="w-10 h-10 rounded-2xl bg-[#0B5D4B] flex items-center justify-center">
                 <img
-                  src="/images/logo.jpg"
-                  alt="Hogazo"
+                  src="/images/logo-casayaa.svg"
+                  alt="casayaa"
                   className="h-12 w-auto"
                 />
               </div>
 
               <h2 className="text-3xl font-bold">
-                Hogazo
+                casayaa
               </h2>
 
             </div>

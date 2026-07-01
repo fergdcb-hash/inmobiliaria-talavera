@@ -25,15 +25,7 @@ export default function Hero() {
             className="h-16 md:h-20 w-auto rounded-2xl"
           />
 
-          <div>
-            <h1 className="text-2xl font-bold text-[#333333]">
-              Casayaa
-            </h1>
-
-            <p className="text-sm text-gray-500">
-              Inmobiliaria
-            </p>
-          </div>
+          
 
         </div>
 
@@ -175,7 +167,7 @@ export default function Hero() {
             Vende o alquila
             <br />
 
-            <span className="text-[#C96E43]">
+            <span className="text-[#FF6600]">
               tu vivienda
             </span>
 
@@ -189,13 +181,13 @@ export default function Hero() {
 
   
             <p className="text-xl md:text-2xl text-[#333333] mb-4">
-              <span className="font-bold text-[#C96E43]">
+              <span className="font-bold text-[#FF6600]">
                 AHORRO MEDIO
               </span>{" "}
                 de nuestros clientes
             </p>
 
-            <h2 className="text-6xl md:text-8xl font-extrabold text-[#C96E43] leading-none">
+            <h2 className="text-6xl md:text-8xl font-extrabold text-[#FF6600] leading-none">
                 4.500€
             </h2>
 
