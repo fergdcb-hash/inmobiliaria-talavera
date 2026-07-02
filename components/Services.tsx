@@ -6,17 +6,16 @@ export default function Services() {
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-8 relative z-10">
 
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16 md:mb-20">
+        {/* TÍTULO */}
+        <div className="text-center mb-20">
 
-          <div>
-            <p className="text-[#333333] font-semibold tracking-[0.2em] mb-5">
-              SERVICIOS
-            </p>
+          <p className="uppercase tracking-[0.35em] text-[#C96E43] font-semibold mb-4">
+            CASAYAA
+          </p>
 
-            <h2 className="text-[3rem] md:text-[4.5rem] leading-[1] font-bold text-[#333333] max-w-4xl">
-              Nos encargamos de todo el proceso
-            </h2>
-          </div>
+          <h2 className="text-[3.5rem] md:text-[5rem] font-bold text-[#333333]">
+            Servicios
+          </h2>
 
         </div>
 
@@ -28,7 +27,7 @@ export default function Services() {
             <div className="bg-white rounded-[30px] h-[220px] md:h-[260px] overflow-hidden mb-8">
               <img
                 src="/images/service1.jpg"
-                alt="Servicio"
+                alt="Venta Low Cost"
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-[2000ms]"
               />
             </div>
@@ -45,8 +44,8 @@ export default function Services() {
             </p>
 
             <a
-              href="#contacto"
-              className="mt-auto inline-flex items-center justify-center bg-[#C96E43] hover:bg-[#C96E43] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+              href="#contacto?tipo=vender"
+              className="mt-auto inline-flex items-center justify-center bg-[#C96E43] hover:bg-[#B85E36] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
             >
               Quiero vender
             </a>
@@ -74,15 +73,17 @@ export default function Services() {
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
               Buscamos y filtramos a los inquilinos mediante estudios de solvencia rigurosos.
+
               <br />
               <br />
+
               Gestionamos las visitas, nos encargamos del contrato y velamos para que
               cobres tu renta puntualmente cada mes.
             </p>
 
             <a
-              href="#contacto"
-              className="mt-auto inline-flex items-center justify-center bg-[#C96E43] hover:bg-[#C96E43] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+              href="#contacto?tipo=alquilar"
+              className="mt-auto inline-flex items-center justify-center bg-[#C96E43] hover:bg-[#B85E36] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
             >
               Quiero alquilar
             </a>
@@ -95,7 +96,7 @@ export default function Services() {
             <div className="bg-white rounded-[30px] h-[220px] md:h-[260px] overflow-hidden mb-8">
               <img
                 src="/images/service3.avif"
-                alt="Servicio"
+                alt="Gestión turística"
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-[2000ms]"
               />
             </div>
@@ -113,8 +114,8 @@ export default function Services() {
             </p>
 
             <a
-              href="#contacto"
-              className="mt-auto inline-flex items-center justify-center bg-[#C96E43] hover:bg-[#C96E43] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
+              href="#contacto?tipo=gestionar"
+              className="mt-auto inline-flex items-center justify-center bg-[#C96E43] hover:bg-[#B85E36] text-white font-semibold px-6 py-3 rounded-2xl transition shadow-lg"
             >
               Quiero gestionar
             </a>

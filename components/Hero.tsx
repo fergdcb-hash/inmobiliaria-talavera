@@ -16,49 +16,33 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="sticky top-0 z-50 backdrop-blur-2xl bg-white/60 border-b border-white/20"
       >
-       <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-5 flex items-center justify-between">
-        <div className="flex items-center gap-4">
+        <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-5 flex items-center justify-between">
 
-          <img
-            src="/images/logo-casayaa.svg"
-            alt="Hogazo Inmobiliaria"
-            className="h-16 md:h-20 w-auto rounded-2xl"
-          />
-
-          
-
-        </div>
+          <div className="flex items-center gap-4">
+            <img
+              src="/images/logo-casayaa.svg"
+              alt="Casayaa"
+              className="h-16 md:h-20 w-auto"
+            />
+          </div>
 
           <nav className="hidden lg:flex items-center gap-10 text-gray-600 text-lg">
-
-            <a href="#" className="hover:text-black transition">
-              Inicio
-            </a>
-
-            <a href="#propiedades" className="hover:text-black transition">
-              Propiedades
-            </a>
-
-            <a href="#servicios" className="hover:text-black transition">
-              Servicios
-            </a>
-
-            <a href="#contacto" className="hover:text-black transition">
-              Contacto
-            </a>
-
+            <a href="#">Inicio</a>
+            <a href="#propiedades">Propiedades</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
           </nav>
 
-            <a
-              href="#contacto"
-              className="hidden lg:flex bg-[#C96E43] hover:hover:bg-[#B85E36] hover:scale-105 transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
-            >
-              Valora Tu Casa
-            </a>
+          <a
+            href="/?tipo=venta#contacto"
+            className="hidden lg:flex bg-[#C96E43] hover:bg-[#B85E36] transition text-white px-6 py-4 rounded-2xl font-semibold shadow-lg"
+          >
+            Valora tu casa gratis →
+          </a>
 
           <button
             onClick={() => setMenuOpen(true)}
-            className="lg:hidden w-12 h-12 rounded-2xl bg-white shadow-premium flex items-center justify-center"
+            className="lg:hidden w-12 h-12 rounded-2xl bg-white shadow-xl flex items-center justify-center"
           >
             <Menu />
           </button>
@@ -67,158 +51,104 @@ export default function Hero() {
       </motion.header>
 
       <AnimatePresence>
-
         {menuOpen && (
-
           <motion.div
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 0.4 }}
             className="fixed inset-0 z-[100] bg-[#f6f6f3]/95 backdrop-blur-2xl flex flex-col"
           >
-
             <div className="flex items-center justify-between px-6 py-6 border-b border-black/5">
-
-              <div className="flex items-center gap-3">
-
-                <div className="w-10 h-10 rounded-2xl bg-[#0B5D4B] flex items-center justify-center text-white">
-                  <img
-                    src="/images/logo.jpg"
-                    alt="Hogazo"
-                    className="h-12 w-auto"
-                  />
-                </div>
-
-                <h2 className="text-2xl font-bold">
-                  Hogazo
-                </h2>
-
-              </div>
-
+              <img src="/images/logo-casayaa.svg" className="h-14 w-auto" alt="Casayaa"/>
               <button
                 onClick={() => setMenuOpen(false)}
-                className="w-12 h-12 rounded-2xl bg-white shadow-premium flex items-center justify-center"
+                className="w-12 h-12 rounded-2xl bg-white shadow-xl flex items-center justify-center"
               >
                 <X />
               </button>
-
             </div>
 
-            <div className="flex flex-col px-8 pt-14 gap-8 text-4xl font-bold text-gray-900">
-
-              <a href="#" onClick={() => setMenuOpen(false)}>
-                Inicio
-              </a>
-
-              <a href="#propiedades" onClick={() => setMenuOpen(false)}>
-                Propiedades
-              </a>
-
-              <a href="#servicios" onClick={() => setMenuOpen(false)}>
-                Servicios
-              </a>
-
-              <a href="#contacto" onClick={() => setMenuOpen(false)}>
-                Contacto
-              </a>
-
+            <div className="flex flex-col px-8 pt-14 gap-8 text-4xl font-bold">
+              <a href="#">Inicio</a>
+              <a href="#propiedades">Propiedades</a>
+              <a href="#servicios">Servicios</a>
+              <a href="#contacto">Contacto</a>
             </div>
 
             <div className="mt-auto p-6">
-
               <a
-                href="#contacto"
-                onClick={() => setMenuOpen(false)}
-                className="bg-[#0B5D4B] hover:bg-[#084738] transition text-white w-full py-5 rounded-2xl text-xl font-semibold flex items-center justify-center shadow-lg"
+                href="/?tipo=venta#contacto"
+                className="bg-[#C96E43] hover:bg-[#B85E36] text-white w-full py-5 rounded-2xl text-xl font-semibold flex justify-center"
               >
-                Contacto
+                Valora tu casa gratis →
               </a>
-
             </div>
-
           </motion.div>
-
         )}
-
       </AnimatePresence>
 
-      <div className="max-w-[1500px] mx-auto px-6 md:px-8 pt-10 md:pt-20 pb-20 md:pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
+      <div className="max-w-[1500px] mx-auto px-6 md:px-8 pt-10 md:pt-20 pb-20 grid lg:grid-cols-2 gap-16 items-center">
 
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="max-w-2xl"
         >
-
-          <div className="inline-flex items-center gap-3 bg-white rounded-full px-4 md:px-5 py-2 md:py-3 shadow-premium mb-6 md:mb-8">
-
-            <div className="w-3 h-3 rounded-full bg-[#F4F1EA]"></div>
-
-            <p className="text-gray-700 font-medium text-sm md:text-base">
+          <div className="inline-flex items-center gap-3 bg-white rounded-full px-5 py-3 shadow-xl mb-8">
+            <p className="text-gray-700">
               La inmobiliaria que mira por tu bolsillo
             </p>
-
           </div>
 
-          <h1 className="text-[3.2rem] md:text-[5.5rem] leading-[0.95] font-bold text-[#333333] mb-6 md:mb-8">
-
+          <h1 className="text-[3.2rem] md:text-[5.5rem] leading-[0.95] font-bold text-[#333333] mb-8">
             Vende o alquila
             <br />
-
-            <span className="text-[#FF6600]">
-              tu vivienda
-            </span>
-
+            <span className="text-[#FF6600]">tu vivienda</span>
             <br />
-
             sin comisiones abusivas
-
           </h1>
 
-          <div className="max-w-3xl">
+          <p className="text-xl md:text-2xl text-[#333333] mb-4">
+            <span className="font-bold text-[#FF6600]">AHORRO MEDIO</span> de nuestros clientes
+          </p>
 
-  
-            <p className="text-xl md:text-2xl text-[#333333] mb-4">
-              <span className="font-bold text-[#FF6600]">
-                AHORRO MEDIO
-              </span>{" "}
-                de nuestros clientes
-            </p>
+          <h2 className="text-6xl md:text-8xl font-extrabold text-[#FF6600]">
+            4.500€
+          </h2>
 
-            <h2 className="text-6xl md:text-8xl font-extrabold text-[#FF6600] leading-none">
-                4.500€
-            </h2>
+          <p className="text-2xl font-semibold text-[#333333] mt-3">
+            por transacción
+          </p>
 
-            <p className="text-2xl md:text-3xl font-semibold text-[#333333] mt-3">
-                por transacción
-            </p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-10">
+            <a
+              href="/?tipo=venta#contacto"
+              className="bg-[#C96E43] hover:bg-[#B85E36] text-white px-10 py-5 rounded-2xl text-xl font-semibold text-center"
+            >
+              Valora tu casa gratis →
+            </a>
 
+            <a
+              href="#propiedades"
+              className="border border-[#C96E43] text-[#C96E43] px-8 py-5 rounded-2xl text-xl font-semibold text-center hover:bg-[#C96E43] hover:text-white"
+            >
+              Ver viviendas
+            </a>
           </div>
-
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="relative flex justify-center items-center"
+          className="relative flex justify-center"
         >
-
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-[#F4F1EA] opacity-90 blur-[140px]"></div>
           <img
             src="/images/mascot.png"
-            alt="Hogazo Mascota"
-            className="relative z-10 w-full max-w-[1000px] h-auto object-contain drop-shadow-[0_35px_70px_rgba(0,0,0,0.15)]"
+            alt="Mascota Casayaa"
+            className="w-full max-w-[900px]"
           />
-
         </motion.div>
-          
-         
 
       </div>
-
     </section>
   );
 }

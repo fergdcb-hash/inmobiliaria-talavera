@@ -4,6 +4,7 @@
   import Valuation from "@/components/Valuation";
   import Footer from "@/components/Footer";
   import Team from "@/components/Team";
+  import Success from "@/components/Success";
 
   export default function Home() {
     return (
@@ -14,9 +15,13 @@
 
         <Properties />
 
+        <Success />
+
         <Valuation />
 
         <Team />
+
+        <Valuation />
 
         <section className="py-20 bg-[#F7F4EE]">
           <div className="max-w-7xl mx-auto px-6 md:px-8">
@@ -26,7 +31,7 @@
               <div className="max-w-3xl">
 
                 <p className="text-[#C96E43] font-semibold tracking-[0.2em] mb-4">
-                  HOGAZO
+                  CASAYAA
                 </p>
 
                 <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">

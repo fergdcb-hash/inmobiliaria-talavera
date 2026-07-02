@@ -8,16 +8,14 @@ export default function Properties() {
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-8">
 
-        {/* HEADER */}
-        <div className="mb-16 md:mb-20">
-          <p className="text-[#333333] font-semibold tracking-[0.2em] mb-5">
-            VIVIENDAS DESTACADAS
-          </p>
+     {/* TÍTULO */}
+     <div className="text-center mb-20">
 
-          <h2 className="text-[3rem] md:text-[4.5rem] leading-[1] font-bold text-[#333333] max-w-4xl">
-            Viviendas en Talavera y Comarca
-          </h2>
-        </div>
+       <h2 className="text-[3.5rem] md:text-[5rem] font-bold text-[#333333]">
+        Viviendas
+       </h2>
+
+     </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
 
@@ -41,7 +39,7 @@ export default function Properties() {
                 </p>
 
                 <span className="bg-[#0B5D4B]/10 text-[#0B5D4B] px-4 py-2 rounded-full font-semibold">
-                  Nueva
+                  En venta
                 </span>
               </div>
 
@@ -139,7 +137,7 @@ export default function Properties() {
                 </p>
 
                 <span className="bg-[#0B5D4B]/10 text-[#0B5D4B] px-4 py-2 rounded-full font-semibold">
-                  Nueva
+                  En venta
                 </span>
               </div>
 

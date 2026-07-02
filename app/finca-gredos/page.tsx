@@ -4,47 +4,52 @@ import { useState } from "react";
 
 export default function PropertyPage() {
   const images = [
-  "/images/finca/1.jpg",
-  "/images/finca/2.jpg",
-  "/images/finca/3.jpg",
-  "/images/finca/4.jpg",
-  "/images/finca/5.jpg",
-];
+    "/images/finca/1.jpg",
+    "/images/finca/2.jpg",
+    "/images/finca/3.jpg",
+    "/images/finca/4.jpg",
+    "/images/finca/5.jpg",
+  ];
 
   const [current, setCurrent] = useState(0);
 
-  const nextImage = () => {
-    setCurrent((prev) => (prev + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrent((prev) => (prev - 1 + images.length) % images.length);
-  };
+  const nextImage = () => setCurrent((prev) => (prev + 1) % images.length);
+  const prevImage = () => setCurrent((prev) => (prev - 1 + images.length) % images.length);
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-16">
 
-      <div className="mb-10">
+      <div className="mb-8">
+        <a
+          href="/#propiedades"
+          className="inline-flex items-center gap-2 text-[#C96E43] font-semibold hover:underline"
+        >
+          ← Volver a propiedades
+        </a>
+      </div>
 
+      <p className="text-gray-500 mb-4">
+        Inicio / Propiedades / Finca rústica con olivar
+      </p>
+
+      <div className="mb-10">
         <p className="text-[#0B5D4B] font-semibold tracking-[0.2em] mb-3">
           PROPIEDAD DESTACADA
         </p>
 
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-            Vivienda reformada en Arenas de San Pedro
+          Finca rústica con olivar y vistas a Gredos
         </h1>
 
         <p className="text-2xl font-bold text-[#0B5D4B]">
-          VENDIDA
+          En venta
         </p>
-
       </div>
 
       <div className="relative">
-
         <img
           src={images[current]}
-          alt="Vivienda"
+          alt="Finca rústica"
           className="w-full h-[450px] md:h-[750px] object-cover rounded-[35px] shadow-2xl"
         />
 
@@ -61,44 +66,39 @@ export default function PropertyPage() {
         >
           →
         </button>
-
       </div>
 
       <div className="flex justify-center mt-6 gap-2">
-
         {images.map((_, index) => (
           <div
             key={index}
             className={`h-3 rounded-full transition-all ${
-              current === index
-                ? "w-10 bg-[#0B5D4B]"
-                : "w-3 bg-gray-300"
+              current === index ? "w-10 bg-[#0B5D4B]" : "w-3 bg-gray-300"
             }`}
           />
         ))}
-
       </div>
 
       <div className="mt-14 grid md:grid-cols-4 gap-6">
 
         <div className="bg-white rounded-3xl p-6 shadow-premium">
-          <p className="text-gray-500 mb-2">Habitaciones</p>
-          <p className="text-3xl font-bold">2</p>
+          <p className="text-gray-500 mb-2">Tipo</p>
+          <p className="text-3xl font-bold">Finca rústica</p>
         </div>
 
         <div className="bg-white rounded-3xl p-6 shadow-premium">
-          <p className="text-gray-500 mb-2">Baños</p>
-          <p className="text-3xl font-bold">1</p>
+          <p className="text-gray-500 mb-2">Uso</p>
+          <p className="text-3xl font-bold">Agrícola</p>
         </div>
 
         <div className="bg-white rounded-3xl p-6 shadow-premium">
-          <p className="text-gray-500 mb-2">Superficie</p>
-          <p className="text-3xl font-bold">80 m²</p>
+          <p className="text-gray-500 mb-2">Entorno</p>
+          <p className="text-3xl font-bold">Sierra de Gredos</p>
         </div>
 
         <div className="bg-white rounded-3xl p-6 shadow-premium">
-          <p className="text-gray-500 mb-2">Parcela</p>
-          <p className="text-3xl font-bold">100 m²</p>
+          <p className="text-gray-500 mb-2">Acceso</p>
+          <p className="text-3xl font-bold">Camino privado</p>
         </div>
 
       </div>
@@ -110,43 +110,44 @@ export default function PropertyPage() {
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed">
-          Te presentamos esta fantástica vivienda de aproximadamente 80 m²,
-          situada en una tranquila y cuidada urbanización privada de Arenas de
-          San Pedro, rodeada de naturaleza y con un entorno ideal para disfrutar
-          de la Sierra de Gredos.
- 
-          <br />
-          <br />
+          Descubre esta magnífica finca rústica situada en un entorno privilegiado,
+          rodeada de naturaleza y con espectaculares vistas a la Sierra de Gredos.
+          Es una oportunidad ideal para quienes buscan tranquilidad, privacidad
+          y un espacio con múltiples posibilidades de uso.
 
-          La vivienda ha sido recientemente reformada y se encuentra lista para
-          entrar a vivir. Dispone de un amplio y luminoso salón, una cocina
-          espaciosa y funcional, un cuarto de baño completo y dos dormitorios,
-          uno con cama de matrimonio y otro con dos camas individuales.
+          <br /><br />
 
-          <br />
-          <br />
+          La finca cuenta con un cuidado olivar, amplias zonas despejadas y un
+          acceso cómodo por camino privado, lo que facilita tanto su disfrute
+          como su explotación agrícola o de ocio.
 
-          Cuenta además con dos terrazas privadas. La principal recorre toda la
-          fachada de la vivienda, proporcionando un espacio perfecto para
-          relajarse al aire libre, mientras que la segunda terraza, más íntima,
-          tiene vistas al aparcamiento privado.
+          <br /><br />
 
-          <br />
-          <br />
+          Su ubicación ofrece un equilibrio perfecto entre naturaleza y cercanía
+          a los principales servicios de la zona, convirtiéndola en una excelente
+          opción como inversión o para disfrutar de un entorno único durante todo el año.
 
-          La urbanización dispone de piscina privada para residentes, amplias
-          zonas ajardinadas y está completamente rodeada de césped, árboles y
-          naturaleza, creando un ambiente tranquilo y agradable durante todo el
-          año.
+          <br /><br />
 
-          <br />
-          <br />
-
-          Una excelente oportunidad para disfrutar de una vivienda reformada en
-          uno de los entornos más bonitos de Arenas de San Pedro.
+          Si buscas una finca con encanto, excelentes vistas y un gran potencial,
+          esta puede ser la oportunidad que estabas esperando.
         </p>
 
       </div>
+
+      <section className="mt-16">
+        <h2 className="text-3xl font-bold text-[#333333] mb-8">Ubicación</h2>
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="bg-white rounded-3xl p-6 shadow-premium"><p className="text-gray-500">Ciudad</p><p className="text-2xl font-bold">Arenas de San Pedro</p></div>
+          <div className="bg-white rounded-3xl p-6 shadow-premium"><p className="text-gray-500">Provincia</p><p className="text-2xl font-bold">Ávila</p></div>
+          <div className="bg-white rounded-3xl p-6 shadow-premium"><p className="text-gray-500">Entorno</p><p className="text-2xl font-bold">Sierra de Gredos</p></div>
+        </div>
+        <div className="rounded-[35px] overflow-hidden shadow-2xl">
+          <iframe src="https://www.google.com/maps?q=Sierra+de+Gredos&output=embed" width="100%" height="500" style={{ border: 0 }} loading="lazy"></iframe>
+        </div>
+        <p className="text-gray-500 mt-6 text-center">La ubicación mostrada es aproximada para preservar la privacidad del propietario.</p>
+      </section>
+
 
     </main>
   );
