@@ -1,6 +1,6 @@
 export default function Team() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#F5EFE5]">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-12">

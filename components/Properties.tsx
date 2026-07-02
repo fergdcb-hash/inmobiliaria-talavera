@@ -24,7 +24,7 @@ export default function Properties() {
           {/* VIVIENDA IZQUIERDA */}
           <a
             href="/propiedad-talavera"
-            className="group block bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
+            className="group flex flex-col h-full bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
           >
             <div className="overflow-hidden">
               <img
@@ -34,7 +34,7 @@ export default function Properties() {
               />
             </div>
 
-            <div className="p-5">
+            <div className="p-5 flex flex-col flex-1">
               <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                 <p className="text-gray-500 text-base">
                   Talavera de la Reina
@@ -49,14 +49,18 @@ export default function Properties() {
                 Piso con vistas panorámicas
               </h3>
 
+              <p className="text-4xl font-extrabold text-[#C96E43] mb-4">
+                190.000 €
+              </p>
+
               <p className="text-sm md:text-base text-gray-600 mb-4">
                 Amplia vivienda en una de las mejores zonas de Talavera de la
                 Reina, con impresionantes vistas despejadas y múltiples
                 posibilidades.
               </p>
 
-              <div className="flex justify-end">
-                <div className="w-14 h-14 rounded-full bg-[#0B5D4B] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
+              <div className="flex justify-end mt-auto pt-6">
+                <div className="w-14 h-14 rounded-full bg-[#C96E43] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
                   →
                 </div>
               </div>
@@ -66,7 +70,7 @@ export default function Properties() {
           {/* VIVIENDA CENTRAL */}
           <a
             href="/propiedad"
-            className="group block bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
+            className="group flex flex-col h-full bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
           >
             <div className="overflow-hidden relative">
 
@@ -81,7 +85,7 @@ export default function Properties() {
               />
             </div>
 
-            <div className="p-5">
+            <div className="p-5 flex flex-col flex-1">
               <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                 <p className="text-gray-500 text-base">
                   Arenas de San Pedro (Ávila)
@@ -95,6 +99,10 @@ export default function Properties() {
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                 Piso reformado en urbanización privada
               </h3>
+              
+              <p className="text-4xl font-extrabold text-[#C96E43] mb-4">
+                139.000 €
+              </p>
 
               <p className="text-sm md:text-base text-gray-600 mb-4">
                 Vivienda de 80 m² recientemente reformada en urbanización
@@ -103,8 +111,8 @@ export default function Properties() {
                 aparcamiento privado.
               </p>
 
-              <div className="flex justify-end">
-                <div className="w-14 h-14 rounded-full bg-[#0B5D4B] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
+              <div className="flex justify-end mt-auto pt-6">
+                <div className="w-14 h-14 rounded-full bg-[#C96E43] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
                   →
                 </div>
               </div>
@@ -114,7 +122,7 @@ export default function Properties() {
           {/* VIVIENDA DERECHA */}
           <a
             href="/finca-gredos"
-            className="group block bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
+            className="group flex flex-col h-full bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
           >
             <div className="overflow-hidden">
               <img
@@ -124,7 +132,7 @@ export default function Properties() {
               />
             </div>
 
-            <div className="p-5">
+            <div className="p-5 flex flex-col flex-1">
               <div className="flex justify-between items-center mb-3">
                 <p className="text-gray-500">
                   Arenas de San Pedro
@@ -138,6 +146,10 @@ export default function Properties() {
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 Finca rústica con olivar y vistas a Gredos
               </h3>
+              
+              <p className="text-4xl font-extrabold text-[#C96E43] mb-4">
+                39.000 €
+              </p>
 
               <p className="text-gray-600 mb-4">
                 Magnífica finca rodeada de naturaleza, con olivos centenarios,
@@ -145,8 +157,8 @@ export default function Properties() {
                 privado.
               </p>
 
-              <div className="flex justify-end">
-                <div className="w-14 h-14 rounded-full bg-[#0B5D4B] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
+              <div className="flex justify-end mt-auto pt-6">
+                <div className="w-14 h-14 rounded-full bg-[#C96E43] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
                   →
                 </div>
               </div>
