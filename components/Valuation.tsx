@@ -28,27 +28,27 @@ function ValuationContent() {
   return (
     <section
       id="contacto"
-      className="relative bg-[#F7F4EE] py-40 overflow-hidden"
+      className="relative bg-[#0a0f1c] py-40 overflow-hidden"
     >
       {/* Fondo */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#E7DDD1] blur-[140px] rounded-full opacity-40"></div>
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#FF6600]/10 blur-[140px] rounded-full"></div>
 
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#EADFD4] blur-[140px] rounded-full opacity-50"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#FF6600]/5 blur-[140px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center relative z-10">
 
         {/* Texto izquierda */}
         <div>
 
-          <p className="text-[#C96E43] font-semibold text-lg mb-5 tracking-[0.2em]">
-            CONTACTO Y VALORACIÓN GRATUITA
+          <p className="text-[#FF6600] font-bold text-lg mb-5 tracking-[0.25em] uppercase">
+            Contacto y valoración gratuita
           </p>
 
-          <h2 className="text-[4rem] md:text-[5rem] leading-[1] font-bold text-[#333333] mb-10">
+          <h2 className="text-[4rem] md:text-[5rem] leading-[1] font-extrabold text-white mb-10">
             Descubre el valor real de tu casa
           </h2>
 
-          <p className="text-2xl text-gray-600 leading-relaxed max-w-2xl">
+          <p className="text-2xl text-white/70 leading-relaxed max-w-2xl">
             No regales el dinero de tu herencia o de tu esfuerzo.
 
             <br />
@@ -69,9 +69,9 @@ function ValuationContent() {
         {/* Formulario */}
         <div>
 
-          <div className="bg-[#FBFAF7] rounded-[45px] p-10 shadow-2xl border border-[#E6DED3]">
+          <div className="bg-white rounded-[45px] p-10 shadow-2xl border border-[#EDE6DA]">
 
-            <h3 className="text-4xl font-bold text-[#333333] mb-3">
+            <h3 className="text-4xl font-extrabold text-[#1a1a1a] mb-3">
               {titulo}
             </h3>
 
@@ -82,9 +82,9 @@ function ValuationContent() {
             <div className="flex flex-wrap gap-3 mb-8">
 
               <span
-                className={`px-4 py-2 rounded-full font-semibold ${
+                className={`px-5 py-2.5 rounded-full font-bold transition ${
                   tipo === "venta"
-                    ? "bg-[#C96E43] text-white"
+                    ? "bg-[#FF6600] text-white"
                     : "bg-gray-100 text-gray-700"
                 }`}
               >
@@ -92,9 +92,9 @@ function ValuationContent() {
               </span>
 
               <span
-                className={`px-4 py-2 rounded-full font-semibold ${
+                className={`px-5 py-2.5 rounded-full font-bold transition ${
                   tipo === "alquiler"
-                    ? "bg-[#C96E43] text-white"
+                    ? "bg-[#FF6600] text-white"
                     : "bg-gray-100 text-gray-700"
                 }`}
               >
@@ -102,9 +102,9 @@ function ValuationContent() {
               </span>
 
               <span
-                className={`px-4 py-2 rounded-full font-semibold ${
+                className={`px-5 py-2.5 rounded-full font-bold transition ${
                   tipo === "gestion"
-                    ? "bg-[#C96E43] text-white"
+                    ? "bg-[#FF6600] text-white"
                     : "bg-gray-100 text-gray-700"
                 }`}
               >
@@ -118,28 +118,28 @@ function ValuationContent() {
               <input
                 type="text"
                 placeholder="Nombre"
-                className="p-5 rounded-2xl border border-[#D8D1C5] text-xl outline-none focus:border-[#C96E43]"
+                className="p-5 rounded-2xl border border-[#E2DACB] text-xl outline-none focus:border-[#FF6600] transition"
               />
 
               <input
                 type="tel"
                 placeholder="Teléfono"
-                className="p-5 rounded-2xl border border-[#D8D1C5] text-xl outline-none focus:border-[#C96E43]"
+                className="p-5 rounded-2xl border border-[#E2DACB] text-xl outline-none focus:border-[#FF6600] transition"
               />
 
               <input
                 type="email"
                 placeholder="Correo electrónico"
-                className="p-5 rounded-2xl border border-[#D8D1C5] text-xl outline-none focus:border-[#C96E43]"
+                className="p-5 rounded-2xl border border-[#E2DACB] text-xl outline-none focus:border-[#FF6600] transition"
               />
 
               <input
                 type="text"
                 placeholder="Dirección de la vivienda"
-                className="p-5 rounded-2xl border border-[#D8D1C5] text-xl outline-none focus:border-[#C96E43]"
+                className="p-5 rounded-2xl border border-[#E2DACB] text-xl outline-none focus:border-[#FF6600] transition"
               />
 
-              <button className="bg-[#C96E43] hover:bg-[#B85E36] text-white py-5 rounded-2xl text-2xl font-semibold shadow-xl transition">
+              <button className="bg-[#FF6600] hover:bg-[#e65c00] text-white py-5 rounded-full text-2xl font-bold shadow-xl transition hover:scale-[1.02]">
 
                 {tipo === "alquiler"
                   ? "Solicitar estudio de alquiler"

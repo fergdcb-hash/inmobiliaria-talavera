@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] text-white py-24">
+    <footer className="bg-[#0a0f1c] text-white py-24">
 
       <div className="max-w-[1600px] mx-auto px-8">
 
@@ -11,7 +11,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3 mb-6">
 
-              <div className="w-10 h-10 rounded-2xl bg-[#0B5D4B] flex items-center justify-center">
+              <div className="w-10 h-10 rounded-2xl bg-[#FF6600] flex items-center justify-center">
                 <img
                   src="/images/logo-casayaa.svg"
                   alt="casayaa"
@@ -19,13 +19,13 @@ export default function Footer() {
                 />
               </div>
 
-              <h2 className="text-3xl font-bold">
+              <h2 className="text-3xl font-extrabold">
                 casayaa
               </h2>
 
             </div>
 
-            <p className="text-gray-400 leading-relaxed text-lg">
+            <p className="text-white/60 leading-relaxed text-lg">
               Inmobiliaria de bajo coste, especializada en la zona de Talavera De La Reina, su comarca y el Valle del Tietar.
             </p>
 
@@ -34,25 +34,25 @@ export default function Footer() {
           {/* LINKS */}
           <div>
 
-            <h3 className="text-2xl font-bold mb-6">
+            <h3 className="text-2xl font-extrabold mb-6">
               Navegación
             </h3>
 
-            <div className="flex flex-col gap-4 text-gray-400">
+            <div className="flex flex-col gap-4 text-white/60">
 
-              <a href="#">
+              <a href="#" className="hover:text-[#FF6600] transition">
                 Inicio
               </a>
 
-              <a href="#servicios">
+              <a href="#servicios" className="hover:text-[#FF6600] transition">
                 Servicios
               </a>
 
-              <a href="#propiedades">
+              <a href="#propiedades" className="hover:text-[#FF6600] transition">
                 Propiedades
               </a>
 
-              <a href="#valoracion">
+              <a href="#valoracion" className="hover:text-[#FF6600] transition">
                 Valoración
               </a>
 
@@ -63,11 +63,11 @@ export default function Footer() {
           {/* CONTACTO */}
           <div>
 
-            <h3 className="text-2xl font-bold mb-6">
+            <h3 className="text-2xl font-extrabold mb-6">
               Contacto
             </h3>
 
-            <div className="flex flex-col gap-4 text-gray-400">
+            <div className="flex flex-col gap-4 text-white/60">
 
               <p>
                 Talavera de la Reina
@@ -88,13 +88,13 @@ export default function Footer() {
           {/* REDES */}
           <div>
 
-            <h3 className="text-2xl font-bold mb-6">
+            <h3 className="text-2xl font-extrabold mb-6">
               Redes
             </h3>
 
             <div className="flex gap-4">
 
-              <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center hover:bg-[#0B5D4B] transition cursor-pointer">
+              <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center hover:bg-[#FF6600] transition cursor-pointer">
                 Instagram
               </div>
 
@@ -107,11 +107,11 @@ export default function Footer() {
         {/* LINEA */}
         <div className="border-t border-white/10 mt-20 pt-10 flex flex-col md:flex-row justify-between gap-6">
 
-          <p className="text-gray-500">
+          <p className="text-white/40">
             © 2026 CasaYa. Todos los derechos reservados.
           </p>
 
-          <p className="text-gray-500">
+          <p className="text-white/40">
             Diseñado con estilo minimal premium.
           </p>
 

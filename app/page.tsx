@@ -3,7 +3,6 @@
   import Properties from "@/components/Properties";
   import Valuation from "@/components/Valuation";
   import Footer from "@/components/Footer";
-  import Team from "@/components/Team";
   import Success from "@/components/Success";
 
   export default function Home() {
@@ -18,10 +17,7 @@
         <Success />
 
         <Valuation />
-
-        <Team />
-
-        <Valuation />
+        
 
         <section className="py-20 bg-[#F7F4EE]">
           <div className="max-w-7xl mx-auto px-6 md:px-8">
