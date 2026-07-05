@@ -2,6 +2,7 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import { User, Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 
 function ValuationContent() {
   const searchParams = useSearchParams();
@@ -24,6 +25,13 @@ function ValuationContent() {
       : tipo === "gestion"
       ? "Solicita información sobre nuestro servicio de gestión integral."
       : "Rellena el formulario y nos pondremos en contacto contigo.";
+
+  const textoBoton =
+    tipo === "alquiler"
+      ? "Solicitar estudio de alquiler"
+      : tipo === "gestion"
+      ? "Solicitar información"
+      : "Solicitar valoración gratuita";
 
   return (
     <section
@@ -69,84 +77,57 @@ function ValuationContent() {
         {/* Formulario */}
         <div>
 
-          <div className="bg-white rounded-[45px] p-10 shadow-2xl border border-[#EDE6DA]">
+          <div className="bg-[#111827]/80 rounded-[40px] p-10 shadow-2xl border border-white/10">
 
-            <h3 className="text-4xl font-extrabold text-[#1a1a1a] mb-3">
+            <h3 className="text-4xl font-extrabold text-white mb-3">
               {titulo}
             </h3>
 
-            <p className="text-gray-500 mb-8">
+            <p className="text-white/50 mb-8">
               {descripcion}
             </p>
 
-            <div className="flex flex-wrap gap-3 mb-8">
+            <div className="flex flex-col gap-5">
 
-              <span
-                className={`px-5 py-2.5 rounded-full font-bold transition ${
-                  tipo === "venta"
-                    ? "bg-[#FF6600] text-white"
-                    : "bg-gray-100 text-gray-700"
-                }`}
-              >
-                Venta
-              </span>
+              <div className="flex items-center gap-4 px-6 py-4 rounded-2xl border border-white/15 bg-transparent focus-within:border-[#FF6600] transition">
+                <User className="text-white/50" size={20} />
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  className="w-full bg-transparent text-lg text-white placeholder-white/40 outline-none"
+                />
+              </div>
 
-              <span
-                className={`px-5 py-2.5 rounded-full font-bold transition ${
-                  tipo === "alquiler"
-                    ? "bg-[#FF6600] text-white"
-                    : "bg-gray-100 text-gray-700"
-                }`}
-              >
-                Alquiler
-              </span>
+              <div className="flex items-center gap-4 px-6 py-4 rounded-2xl border border-white/15 bg-transparent focus-within:border-[#FF6600] transition">
+                <Phone className="text-white/50" size={20} />
+                <input
+                  type="tel"
+                  placeholder="Teléfono"
+                  className="w-full bg-transparent text-lg text-white placeholder-white/40 outline-none"
+                />
+              </div>
 
-              <span
-                className={`px-5 py-2.5 rounded-full font-bold transition ${
-                  tipo === "gestion"
-                    ? "bg-[#FF6600] text-white"
-                    : "bg-gray-100 text-gray-700"
-                }`}
-              >
-                Gestión
-              </span>
+              <div className="flex items-center gap-4 px-6 py-4 rounded-2xl border border-white/15 bg-transparent focus-within:border-[#FF6600] transition">
+                <Mail className="text-white/50" size={20} />
+                <input
+                  type="email"
+                  placeholder="Correo electrónico"
+                  className="w-full bg-transparent text-lg text-white placeholder-white/40 outline-none"
+                />
+              </div>
 
-            </div>
+              <div className="flex items-center gap-4 px-6 py-4 rounded-2xl border border-white/15 bg-transparent focus-within:border-[#FF6600] transition">
+                <MapPin className="text-white/50" size={20} />
+                <input
+                  type="text"
+                  placeholder="Dirección de la vivienda"
+                  className="w-full bg-transparent text-lg text-white placeholder-white/40 outline-none"
+                />
+              </div>
 
-            <div className="flex flex-col gap-6">
-
-              <input
-                type="text"
-                placeholder="Nombre"
-                className="p-5 rounded-2xl border border-[#E2DACB] text-xl outline-none focus:border-[#FF6600] transition"
-              />
-
-              <input
-                type="tel"
-                placeholder="Teléfono"
-                className="p-5 rounded-2xl border border-[#E2DACB] text-xl outline-none focus:border-[#FF6600] transition"
-              />
-
-              <input
-                type="email"
-                placeholder="Correo electrónico"
-                className="p-5 rounded-2xl border border-[#E2DACB] text-xl outline-none focus:border-[#FF6600] transition"
-              />
-
-              <input
-                type="text"
-                placeholder="Dirección de la vivienda"
-                className="p-5 rounded-2xl border border-[#E2DACB] text-xl outline-none focus:border-[#FF6600] transition"
-              />
-
-              <button className="bg-[#FF6600] hover:bg-[#e65c00] text-white py-5 rounded-full text-2xl font-bold shadow-xl transition hover:scale-[1.02]">
-
-                {tipo === "alquiler"
-                  ? "Solicitar estudio de alquiler"
-                  : tipo === "gestion"
-                  ? "Solicitar información"
-                  : "Solicitar valoración gratuita"}
-
+              <button className="mt-2 bg-[#FF6600] hover:bg-[#e65c00] text-white py-5 rounded-full text-xl font-bold shadow-xl transition hover:scale-[1.02] flex items-center justify-center gap-2">
+                {textoBoton}
+                <ArrowRight size={22} />
               </button>
 
             </div>

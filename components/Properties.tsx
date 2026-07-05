@@ -30,10 +30,10 @@ export default function Properties() {
           {/* VIVIENDA IZQUIERDA */}
           <a
             href="/propiedad-talavera"
-            className="group flex flex-col h-full bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
+            className="group flex flex-col h-full bg-[#182231] rounded-[40px] overflow-hidden border border-white/10 hover:border-[#FF6600]/60 shadow-premium hover:-translate-y-2 transition duration-500"
           >
             <div className="overflow-hidden relative">
-              <div className="absolute top-6 left-6 z-20 bg-white/95 backdrop-blur text-[#1a1a1a] font-bold text-sm px-4 py-2 rounded-full shadow">
+              <div className="absolute top-6 left-6 z-20 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-sm px-4 py-2 rounded-full">
                 VISTAS
               </div>
 
@@ -46,16 +46,16 @@ export default function Properties() {
 
             <div className="p-5 flex flex-col flex-1">
               <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                <p className="text-gray-500 text-base">
+                <p className="text-gray-400 text-base">
                   Talavera de la Reina
                 </p>
 
-                <span className="bg-[#0B5D4B]/10 text-[#0B5D4B] px-4 py-2 rounded-full font-bold">
+                <span className="bg-emerald-400/10 text-emerald-400 border border-emerald-400/20 px-4 py-2 rounded-full font-bold text-sm">
                   En venta
                 </span>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">
+              <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-2">
                 Piso con vistas panorámicas
               </h3>
 
@@ -63,14 +63,14 @@ export default function Properties() {
                 190.000 €
               </p>
 
-              <p className="text-sm md:text-base text-gray-600 mb-4">
+              <p className="text-sm md:text-base text-gray-400 mb-4">
                 Amplia vivienda en una de las mejores zonas de Talavera de la
                 Reina, con impresionantes vistas despejadas y múltiples
                 posibilidades.
               </p>
 
               <div className="flex justify-end mt-auto pt-6">
-                <div className="w-14 h-14 rounded-full bg-[#FF6600] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
+                <div className="w-14 h-14 rounded-full bg-[#FF6600] text-white text-2xl flex items-center justify-center group-hover:translate-x-1 group-hover:scale-110 transition duration-300">
                   →
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function Properties() {
           {/* VIVIENDA CENTRAL */}
           <a
             href="/propiedad"
-            className="group flex flex-col h-full bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
+            className="group flex flex-col h-full bg-[#182231] rounded-[40px] overflow-hidden border border-white/10 hover:border-[#FF6600]/60 shadow-premium hover:-translate-y-2 transition duration-500"
           >
             <div className="overflow-hidden relative">
 
@@ -97,16 +97,16 @@ export default function Properties() {
 
             <div className="p-5 flex flex-col flex-1">
               <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                <p className="text-gray-500 text-base">
+                <p className="text-gray-400 text-base">
                   Arenas de San Pedro (Ávila)
                 </p>
 
-                <span className="bg-red-100 text-red-700 px-4 py-2 rounded-full font-bold">
+                <span className="bg-red-400/10 text-red-400 border border-red-400/20 px-4 py-2 rounded-full font-bold text-sm">
                   Vendida
                 </span>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">
+              <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-2">
                 Piso reformado en urbanización privada
               </h3>
 
@@ -114,7 +114,7 @@ export default function Properties() {
                 139.000 €
               </p>
 
-              <p className="text-sm md:text-base text-gray-600 mb-4">
+              <p className="text-sm md:text-base text-gray-400 mb-4">
                 Vivienda de 80 m² recientemente reformada en urbanización
                 privada con piscina, rodeada de naturaleza y zonas ajardinadas.
                 Dispone de 2 habitaciones, 1 baño, amplias terrazas y
@@ -122,7 +122,7 @@ export default function Properties() {
               </p>
 
               <div className="flex justify-end mt-auto pt-6">
-                <div className="w-14 h-14 rounded-full bg-[#FF6600] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
+                <div className="w-14 h-14 rounded-full bg-[#FF6600] text-white text-2xl flex items-center justify-center group-hover:translate-x-1 group-hover:scale-110 transition duration-300">
                   →
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function Properties() {
           {/* VIVIENDA DERECHA */}
           <a
             href="/finca-gredos"
-            className="group flex flex-col h-full bg-white rounded-[40px] overflow-hidden shadow-premium hover:-translate-y-2 transition duration-500"
+            className="group flex flex-col h-full bg-[#182231] rounded-[40px] overflow-hidden border border-white/10 hover:border-[#FF6600]/60 shadow-premium hover:-translate-y-2 transition duration-500"
           >
             <div className="overflow-hidden">
               <img
@@ -144,16 +144,16 @@ export default function Properties() {
 
             <div className="p-5 flex flex-col flex-1">
               <div className="flex justify-between items-center mb-3">
-                <p className="text-gray-500">
+                <p className="text-gray-400">
                   Arenas de San Pedro
                 </p>
 
-                <span className="bg-[#0B5D4B]/10 text-[#0B5D4B] px-4 py-2 rounded-full font-bold">
+                <span className="bg-emerald-400/10 text-emerald-400 border border-emerald-400/20 px-4 py-2 rounded-full font-bold text-sm">
                   En venta
                 </span>
               </div>
 
-              <h3 className="text-2xl font-extrabold text-gray-900 mb-3">
+              <h3 className="text-2xl font-extrabold text-white mb-3">
                 Finca rústica con olivar y vistas a Gredos
               </h3>
 
@@ -161,14 +161,14 @@ export default function Properties() {
                 39.000 €
               </p>
 
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-400 mb-4">
                 Magnífica finca rodeada de naturaleza, con olivos centenarios,
                 excelentes vistas a la Sierra de Gredos y acceso por camino
                 privado.
               </p>
 
               <div className="flex justify-end mt-auto pt-6">
-                <div className="w-14 h-14 rounded-full bg-[#FF6600] text-white text-2xl flex items-center justify-center group-hover:scale-110 transition">
+                <div className="w-14 h-14 rounded-full bg-[#FF6600] text-white text-2xl flex items-center justify-center group-hover:translate-x-1 group-hover:scale-110 transition duration-300">
                   →
                 </div>
               </div>

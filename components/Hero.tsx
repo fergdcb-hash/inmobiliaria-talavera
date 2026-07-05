@@ -148,19 +148,15 @@ export default function Hero() {
           {/* Divisor */}
           <div className="w-20 h-1 bg-[#FF6600] rounded-full mb-8" />
 
-          {/* Descripción */}
-          <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-[650px] mb-12">
-            Valoramos, vendemos y alquilamos viviendas en Talavera de la Reina,
-            Arenas de San Pedro y toda la comarca con un servicio cercano,
-            transparente y sin comisiones abusivas.
-          </p>
+         
+    
 
           {/* Ahorro */}
           <div className="flex items-start gap-5">
             <div className="w-1.5 self-stretch bg-[#FF6600] rounded-full" />
             <div>
               <p className="uppercase tracking-[0.15em] text-white/80 font-semibold text-sm mb-1">
-                Nuestros clientes ahorran una media de
+                Ahorro medio de nuestros clientes
               </p>
               <h2 className="text-7xl md:text-8xl font-black text-[#FF6600] leading-none">
                 4.500€
