@@ -4,6 +4,7 @@ import Properties from "@/components/Properties";
 import Valuation from "@/components/Valuation";
 import Footer from "@/components/Footer";
 import Success from "@/components/Success";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
       <Services />
 
       <Properties />
-
+      
+      <Reviews />
+      
       <Success />
 
       <Valuation />
