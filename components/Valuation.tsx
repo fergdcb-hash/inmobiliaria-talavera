@@ -55,7 +55,7 @@ function ValuationContent() {
     try {
       // ⚠️ Ajusta esta ruta si tu route.ts está en otra carpeta,
       // p.ej. "/api/valoracion" en vez de "/api/contacto"
-      const res = await fetch("/api/contacto", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
