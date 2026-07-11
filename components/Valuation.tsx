@@ -1,12 +1,23 @@
 "use client";
 
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { User, Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import { User, Phone, Mail, MapPin, ArrowRight, Loader2, Check } from "lucide-react";
 
 function ValuationContent() {
   const searchParams = useSearchParams();
   const tipo = searchParams.get("tipo");
+
+  const [formData, setFormData] = useState({
+    nombre: "",
+    telefono: "",
+    email: "",
+    direccion: "",
+  });
+
+  const [estado, setEstado] = useState<"idle" | "loading" | "success" | "error">(
+    "idle"
+  );
 
   const titulo =
     tipo === "venta"
@@ -32,6 +43,37 @@ function ValuationContent() {
       : tipo === "gestion"
       ? "Solicitar información"
       : "Solicitar valoración gratuita";
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setEstado("loading");
+
+    try {
+      // ⚠️ Ajusta esta ruta si tu route.ts está en otra carpeta,
+      // p.ej. "/api/valoracion" en vez de "/api/contacto"
+      const res = await fetch("/api/contacto", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setEstado("success");
+        setFormData({ nombre: "", telefono: "", email: "", direccion: "" });
+      } else {
+        setEstado("error");
+      }
+    } catch (error) {
+      console.error(error);
+      setEstado("error");
+    }
+  };
 
   return (
     <section
@@ -77,7 +119,10 @@ function ValuationContent() {
         {/* Formulario */}
         <div>
 
-          <div className="bg-[#111827]/80 rounded-[40px] p-10 shadow-2xl border border-white/10">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-[#111827]/80 rounded-[40px] p-10 shadow-2xl border border-white/10"
+          >
 
             <h3 className="text-4xl font-extrabold text-white mb-3">
               {titulo}
@@ -93,6 +138,10 @@ function ValuationContent() {
                 <User className="text-white/50" size={20} />
                 <input
                   type="text"
+                  name="nombre"
+                  value={formData.nombre}
+                  onChange={handleChange}
+                  required
                   placeholder="Nombre"
                   className="w-full bg-transparent text-lg text-white placeholder-white/40 outline-none"
                 />
@@ -102,6 +151,10 @@ function ValuationContent() {
                 <Phone className="text-white/50" size={20} />
                 <input
                   type="tel"
+                  name="telefono"
+                  value={formData.telefono}
+                  onChange={handleChange}
+                  required
                   placeholder="Teléfono"
                   className="w-full bg-transparent text-lg text-white placeholder-white/40 outline-none"
                 />
@@ -111,6 +164,10 @@ function ValuationContent() {
                 <Mail className="text-white/50" size={20} />
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                   placeholder="Correo electrónico"
                   className="w-full bg-transparent text-lg text-white placeholder-white/40 outline-none"
                 />
@@ -120,19 +177,53 @@ function ValuationContent() {
                 <MapPin className="text-white/50" size={20} />
                 <input
                   type="text"
+                  name="direccion"
+                  value={formData.direccion}
+                  onChange={handleChange}
+                  required
                   placeholder="Dirección de la vivienda"
                   className="w-full bg-transparent text-lg text-white placeholder-white/40 outline-none"
                 />
               </div>
 
-              <button className="mt-2 bg-[#FF6600] hover:bg-[#e65c00] text-white py-5 rounded-full text-xl font-bold shadow-xl transition hover:scale-[1.02] flex items-center justify-center gap-2">
-                {textoBoton}
-                <ArrowRight size={22} />
+              <button
+                type="submit"
+                disabled={estado === "loading"}
+                className="mt-2 bg-[#FF6600] hover:bg-[#e65c00] disabled:opacity-60 disabled:cursor-not-allowed text-white py-5 rounded-full text-xl font-bold shadow-xl transition hover:scale-[1.02] flex items-center justify-center gap-2"
+              >
+                {estado === "loading" ? (
+                  <>
+                    <Loader2 size={22} className="animate-spin" />
+                    Enviando...
+                  </>
+                ) : estado === "success" ? (
+                  <>
+                    <Check size={22} />
+                    ¡Enviado correctamente!
+                  </>
+                ) : (
+                  <>
+                    {textoBoton}
+                    <ArrowRight size={22} />
+                  </>
+                )}
               </button>
+
+              {estado === "success" && (
+                <p className="text-center text-emerald-400 text-sm">
+                  Hemos recibido tu solicitud, te contactaremos muy pronto.
+                </p>
+              )}
+
+              {estado === "error" && (
+                <p className="text-center text-red-400 text-sm">
+                  Ha ocurrido un error al enviar el formulario. Inténtalo de nuevo.
+                </p>
+              )}
 
             </div>
 
-          </div>
+          </form>
 
         </div>
 

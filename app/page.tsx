@@ -15,12 +15,12 @@ export default function Home() {
       <Services />
 
       <Properties />
-      
-      <Reviews />
-      
-      <Success />
 
+      <Success />
+      
       <Valuation />
+
+      <Reviews />
 
       {/* SOBRE CASAYAA */}
 
