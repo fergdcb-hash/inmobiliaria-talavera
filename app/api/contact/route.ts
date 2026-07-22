@@ -8,7 +8,10 @@ export async function POST(req: Request) {
 
     const { nombre, telefono, email, direccion } = body;
 
-    await resend.emails.send({
+    console.log("Datos recibidos:", body);
+    console.log("API KEY existe:", !!process.env.RESEND_API_KEY);
+
+    const result = await resend.emails.send({
       from: "Casayaa <info@casayaa.com>",
       to: "info@casayaa.com",
       subject: "Nueva solicitud de valoración gratuita",
@@ -22,13 +25,21 @@ export async function POST(req: Request) {
       `,
     });
 
-    return Response.json({ success: true });
+    console.log("Respuesta de Resend:", result);
+
+    return Response.json({
+      success: true,
+      result,
+    });
 
   } catch (error) {
-    console.error(error);
+    console.error("ERROR RESEND:", error);
 
     return Response.json(
-      { success: false },
+      {
+        success: false,
+        error: error instanceof Error ? error.message : String(error),
+      },
       { status: 500 }
     );
   }
