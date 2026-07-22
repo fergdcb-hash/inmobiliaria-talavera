@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* SOBRE CASAYAA */}
 
-      <section className="relative py-32 bg-[#0a0f1c] overflow-hidden border-y border-white/10">
+      <section className="relative py-32 bg-[#1b2a41] overflow-hidden border-y border-white/10">
 
         {/* Resplandores */}
         <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-[#FF6600]/10 blur-[170px] rounded-full"></div>

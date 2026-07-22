@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MapPin } from "lucide-react";
 import { useState } from "react";
+import Logo from "./logo";
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,11 +31,8 @@ export default function Hero() {
       >
         <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
           {/* Logo */}
-          <img
-            src="/images/logo-casayaa.svg"
-            alt="Casayaa"
-            className="h-16 md:h-20 w-auto transition duration-300 hover:scale-105"
-          />
+        
+        <Logo />
 
           {/* Menú escritorio */}
           <nav className="hidden lg:flex items-center gap-10 text-white text-lg font-semibold">
