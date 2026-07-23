@@ -27,7 +27,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="sticky top-0 z-50 bg-[#0a0f1c]"
+        className="sticky top-0 z-50 bg-[#1b2a41]"
       >
         <div className="max-w-[1500px] mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
           {/* Logo */}

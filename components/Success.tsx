@@ -1,6 +1,6 @@
 export default function Success() {
   return (
-    <section className="relative py-24 bg-[#0a0f1c] overflow-hidden">
+    <section className="relative py-24 bg-[#1b2a41] overflow-hidden">
 
       {/* Resplandores de fondo */}
       <div className="absolute top-0 left-1/3 w-[550px] h-[550px] bg-[#FF6600]/10 blur-[160px] rounded-full"></div>

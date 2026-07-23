@@ -2,7 +2,7 @@ export default function Services() {
   return (
     <section
       id="servicios"
-      className="relative py-24 md:py-36 overflow-hidden bg-[#0a0f1c]"
+      className="relative py-24 md:py-36 overflow-hidden bg-[#1b2a41]"
     >
       {/* Resplandores de fondo */}
       <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#FF6600]/10 blur-[160px] rounded-full"></div>

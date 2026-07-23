@@ -78,7 +78,7 @@ function ValuationContent() {
   return (
     <section
       id="contacto"
-      className="relative bg-[#0a0f1c] py-40 overflow-hidden"
+      className="relative bg-[#1b2a41] py-40 overflow-hidden"
     >
       {/* Fondo */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#FF6600]/10 blur-[140px] rounded-full"></div>

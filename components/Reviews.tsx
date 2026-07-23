@@ -4,7 +4,7 @@ export default function Reviews() {
   return (
     <section
       id="opiniones"
-      className="relative py-28 bg-[#0a0f1c] overflow-hidden"
+      className="relative py-28 bg-[#1b2a41] overflow-hidden"
     >
       {/* Luces de fondo */}
       <div className="absolute top-0 left-0 w-[450px] h-[450px] bg-[#FF6600]/10 blur-[180px] rounded-full"></div>

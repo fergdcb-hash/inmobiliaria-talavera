@@ -4,7 +4,7 @@ export default function Properties() {
   return (
     <section
       id="propiedades"
-      className="relative py-24 md:py-36 overflow-hidden bg-[#0a0f1c]"
+      className="relative py-24 md:py-36 overflow-hidden bg-[#1b2a41]"
     >
       {/* Resplandores de fondo */}
       <div className="absolute top-0 right-1/4 w-[550px] h-[550px] bg-[#FF6600]/10 blur-[160px] rounded-full"></div>
